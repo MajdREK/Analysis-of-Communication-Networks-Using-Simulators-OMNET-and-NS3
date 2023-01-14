@@ -51,7 +51,7 @@ time.
 
 This table shows the default setup configuration:
 
-https://raw.githubusercontent.com/MajdREK/Analysis-of-Communication-Networks-Using-Simulators-OMNET-and-NS3/main/setup.png
+![Alt text](setup.png?raw=true "Title")
 
 **How to run the projects?**
 
