@@ -2,7 +2,7 @@
 Master Thesis in University of Applied Sciences Berlin : Communication networks are analyzed using NS3 and OMNET++. The two simulators are studied and compared based on network performance criteria such as packet loss rate, throughput, end-to-end delay, jitter, collisions, number of events, and simulation time.
 
 
-** Why this work was needed ** 
+**Why this work was needed?** 
 
 Much work was done in comparing the differences
 between OMNET++ and NS3 network simulators in terms of general instruction
@@ -21,7 +21,7 @@ protocols like CSMA/CD and PPP had matured and were finalized. While relatively
 newer protocols like Wi-Fi are still changing, newer versions are continually being
 released.
 
-** How the work was done **
+**How the work was done?**
 
 Here we describe the default setup, you will find bellow how to reconfigure the network:
 
@@ -51,3 +51,12 @@ time.
 
 This table shows the default setup configuration:
 
+**How to run the projects?**
+
+**How to change the code?**
+
+**How to interpret the graph?**
+
+**Where to go from here?**
+
+**Final notes**
