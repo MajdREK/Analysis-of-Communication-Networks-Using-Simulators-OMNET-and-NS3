@@ -1,3 +1,0 @@
-package customtcpclientserver;
-
-@license(LGPL);
