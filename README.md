@@ -75,7 +75,7 @@ Ns3 : [https://www.youtube.com/watch?v=bYftoLBCXA4](https://www.youtube.com/watc
 
 **How to change the code and reconfigure the setup?**
 
-The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it under the folder [documentation](documentation). Also you can read the document ![C++ code explained](./C++ code explained) that further explains the code.
+The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it under the folder [documentation](documentation). Also you can check the folder ![code_explained](code_explained) that further explains the code.
 
 To make configuration changes, you can work on the omnet.ini file for Omnet++ and run_point_to_point.sh file for Ns3.
 
