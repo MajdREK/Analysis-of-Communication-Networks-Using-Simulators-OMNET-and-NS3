@@ -90,6 +90,12 @@ Read the document **results interpretation**
 
 The code available in this repostry is configurable. changing the **Echo factor** and/or "EchoDelay" can and will change the behaviour of the network which can be further studied.
 
+**Conclusion**
+
+We have concluded that Ns3 gives more accurated and realistic results, and that Omnet++ is more genral purpose than Ns3.
+We also found that Omnet++ has modules, in this exact subject, that require more development and are obsolete , the exact
+function that we needed was control of TxBuffer size.
+
 **Final notes**
 
 This repository studied the diffrence between NS3 and Omnet++ in terms of the performace and behaviour for client server wired connection.
