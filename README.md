@@ -74,7 +74,7 @@ Omnet++ : To better understand Omnet++ ".ini" files use this link [https://doc.o
 When you run the simulation however, you can use the popup to pick the configuration you want. 
 The ".ini" file can be used to change the setup, like adding another machine...
 
-Ns3 : the file run_point_to_point.sh is a bash file that run the simulation and passes the desired arguments, then
+Ns3 : the file run_point_to_point.sh is a bash file that runs the simulation and passes the desired arguments, then
 it extracts the program output and saves it to a file and greps the results.
 You can change the passed parameters, to better understand the function of these parameters run the command : 
 ./waf -v --run "scratch/tcpClientServer.cc --help"
