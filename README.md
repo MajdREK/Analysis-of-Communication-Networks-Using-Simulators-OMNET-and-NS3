@@ -52,22 +52,20 @@ which ensures data transmission in both directions, but only in one direction at
 time.
 
 The following is a topology we used : 
-![Alt text](topology.jpeg?raw=true "Title")
-
-
-
+![topology](topology.jpeg?raw=true "Title")
 
 
 This is the socket diagram that shows what each machine does:
-![Alt text](socket.jpeg?raw=true "Title")
+![socket diagram](socket.jpeg?raw=true "Title")
 
 
 This table shows the default setup configuration:
 
-![Alt text](setup.png?raw=true "Title")
+![setup](setup.png?raw=true "Title")
 
 **How to run the projects?**
-For the installlation of the software, check the folder **installation**
+
+For the installlation of the software, check the folder ![installation](installation)
 
 There following are two videos that show how to run the code. 
 
