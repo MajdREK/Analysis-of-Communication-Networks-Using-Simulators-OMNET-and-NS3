@@ -91,9 +91,11 @@ You can change the passed parameters, to better understand the function of these
 
 To change the NS3 setup/topology, you need to change the function **simulate()** in the ".cc" file. This link should be useful [How to setup Ns3 topology?](https://www.nsnam.org/docs/tutorial/html/building-topologies.html)
 
-**How to interpret the graph?**
+**What are the results and how to interpret them?**
 
-Read the document **results interpretation**
+This ![jupyter notebook](render_results_graphs.ipynb) file renders the results in the form of graphs.
+
+For the interpretation of the graphs, read the document ![results interpretation](results_interpretation.pdf)
 
 **Where to go from here?**
 
