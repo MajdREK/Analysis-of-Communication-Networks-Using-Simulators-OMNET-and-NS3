@@ -55,7 +55,10 @@ The following is a topology we used :
 ![Alt text](topology.jpeg?raw=true "Title")
 
 
-This is the socket diagram that shows how the machines communicate :
+
+
+
+This is the socket diagram that shows what each machine does:
 ![Alt text](socket.jpeg?raw=true "Title")
 
 
