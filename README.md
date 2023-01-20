@@ -52,11 +52,11 @@ which ensures data transmission in both directions, but only in one direction at
 time.
 
 The following is a topology we used : 
-![Alt text](topology.png?raw=true "Title")
+![Alt text](topology.jpeg?raw=true "Title")
 
 
 This is the socket diagram that shows how the machines communicate :
-![Alt text](socket.png?raw=true "Title")
+![Alt text](socket.jpeg?raw=true "Title")
 
 
 This table shows the default setup configuration:
