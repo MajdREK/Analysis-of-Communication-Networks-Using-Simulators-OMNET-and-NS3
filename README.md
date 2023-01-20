@@ -51,6 +51,14 @@ both directions simultaneously, and in half-duplex mode with CSMA/CD protocol,
 which ensures data transmission in both directions, but only in one direction at a
 time.
 
+The following is a topology we used : 
+![Alt text](topology.png?raw=true "Title")
+
+
+This is the socket diagram that shows how the machines communicate :
+![Alt text](socket.png?raw=true "Title")
+
+
 This table shows the default setup configuration:
 
 ![Alt text](setup.png?raw=true "Title")
