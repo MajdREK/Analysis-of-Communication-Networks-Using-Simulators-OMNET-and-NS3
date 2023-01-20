@@ -67,6 +67,12 @@ This table shows the default setup configuration:
 
 For the installlation of the software, check the folder ![installation](installation)
 
+In the folders [ns3](ns3) and [omnet++](omnet++) you find the source code of the projects for both simulators.
+
+For Ns3 you place the source code with the bash file under the **scratch** folder and then you run the bash file.
+
+For Omnet++ you place the **WiredTcpClientServer** folder under the **samples** folder of Omnet++.
+
 There following are two videos that show how to run the code. 
 
 Omnet++ : [https://www.youtube.com/watch?v=aMrikVXSh4Q](https://www.youtube.com/watch?v=bYftoLBCXA4)
@@ -92,6 +98,8 @@ You can change the passed parameters, to better understand the function of these
 To change the NS3 setup/topology, you need to change the function **simulate()** in the ".cc" file. This link should be useful [How to setup Ns3 topology?](https://www.nsnam.org/docs/tutorial/html/building-topologies.html)
 
 **What are the results and how to interpret them?**
+
+Under the [results](results) folder you find the results table for both simulators.
 
 This ![jupyter notebook](render_results_graphs.ipynb) file renders the results in the form of graphs.
 
