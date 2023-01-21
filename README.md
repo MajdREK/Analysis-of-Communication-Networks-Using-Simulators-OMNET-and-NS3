@@ -23,7 +23,7 @@ released.
 **What did we do?**
 
 We have created two identical projects, one for each simulator. We have run the projects
-, extracted the results, interpreted the results, and made conclusion.
+, extracted the results, interpreted the results, and made conclusions.
 
 Here we describe the default setup, ( note : you will find bellow how to reconfigure the network) :
 
@@ -32,9 +32,9 @@ a single TCP application. The cable is configured with a data rate of 100Mbps an
 a delay of 0.4 microseconds.
 
 Scenario: The client establishes a TCP connection with the server. Then, the client sends a
-preset number of packets, fixed at 1000 packets with a packet size of 512 bytes, to the
-server periodically following a configurable data rate from 512Kbps to 512Mbps.
-Depending on the configuration of each packet the server receives, it can respond
+preset number of packets, (by default we set this number to 1000 packets with a packet size of 512 bytes), to the
+server one packet at a time following a configurable data rate from 512Kbps to 512Mbps.
+Depending on the configuration of the server, each packet the server receives, it can respond
 with an echo packet whose size is equal to that of the received packet multiplied by
 an echo factor. The echo can be immediate or after a configurable delay.
 The time at which each application starts/stops and the time at which data trans-
