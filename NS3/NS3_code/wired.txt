@@ -1,0 +1,1466 @@
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+[2820/2868] Compiling scratch/WiredTcpClientServer.cc
+22:14:17 [35mrunner[0m ['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-Wstrict-aliasing', '-pthread', '-I.', '-I/usr/include', '-I/usr/include/libxml2', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_GSL=1', '-DNS3_ENABLE_EXAMPLES', '../scratch/WiredTcpClientServer.cc', '-c', '-o/home/kali/ns3/ns-allinone-3.34/ns-3.34/build/scratch/WiredTcpClientServer.cc.3.o', '-DHAVE_BOOST']
+[2829/2868] Linking build/scratch/WiredTcpClientServer
+22:14:28 [35mrunner[0m ['/usr/bin/g++', '-pthread', 'scratch/WiredTcpClientServer.cc.3.o', '-o/home/kali/ns3/ns-allinone-3.34/ns-3.34/build/scratch/WiredTcpClientServer', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-Wl,--no-as-needed', '-Llib', '-lns3.34-aodv-debug', '-lns3.34-test-debug', '-lns3.34-dsr-debug', '-lns3.34-mesh-debug', '-lns3.34-netanim-debug', '-lns3.34-wave-debug', '-lns3.34-wifi-debug', '-lns3.34-lr-wpan-debug', '-lns3.34-lte-debug', '-lns3.34-spectrum-debug', '-lns3.34-antenna-debug', '-lns3.34-applications-debug', '-lns3.34-csma-layout-debug', '-lns3.34-dsdv-debug', '-lns3.34-flow-monitor-debug', '-lns3.34-internet-apps-debug', '-lns3.34-wimax-debug', '-lns3.34-point-to-point-layout-debug', '-lns3.34-nix-vector-routing-debug', '-lns3.34-olsr-debug', '-lns3.34-sixlowpan-debug', '-lns3.34-tap-bridge-debug', '-lns3.34-internet-debug', '-lns3.34-bridge-debug', '-lns3.34-traffic-control-debug', '-lns3.34-buildings-debug', '-lns3.34-propagation-debug', '-lns3.34-uan-debug', '-lns3.34-mobility-debug', '-lns3.34-energy-debug', '-lns3.34-config-store-debug', '-lns3.34-csma-debug', '-lns3.34-fd-net-device-debug', '-lns3.34-virtual-net-device-debug', '-lns3.34-point-to-point-debug', '-lns3.34-topology-read-debug', '-lns3.34-network-debug', '-lns3.34-stats-debug', '-lns3.34-core-debug', '-lrt', '-lgsl', '-lgslcblas', '-lm', '-lsqlite3', '-lxml2']
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (18.313s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 0.5Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 500000.0000000000 bps
+m_sendInterval : 0.0081920000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 8.2920000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 8.2920060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 8.2920130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 4191.9989285600 seconds
+client average received packet delay : 4.1919989286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 8.2838080010 seconds
+client average send time : 4.1919040010 seconds
+client average receive time : 4.1919989286 seconds
+client average throughput : 500.5005005005 kbps
+client send interval :0.0081920000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0081838014 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 8.2839029220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 4191.9509620000 seconds
+server average packet reception delay : 4.1919509620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 8.2838549620 seconds
+server average send time : 4.1919509620 seconds
+server average receive time : 4.1919509620 seconds
+server average throughput : 500.5005005005 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0081838080 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 544.3788412211 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 8.2920195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 8.2920320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 544.8517781812 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 8.2920060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 8.2920195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =544.6152954102Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.540s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 1Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 1000000.0000000000 bps
+m_sendInterval : 0.0040960000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 4.1960000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 4.1960060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 4.1960130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 2146.0469285600 seconds
+client average received packet delay : 2.1460469286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 4.1919040010 seconds
+client average send time : 2.1459520010 seconds
+client average receive time : 2.1460469286 seconds
+client average throughput : 1001.0010010010 kbps
+client send interval :0.0040960000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0040918974 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 4.1919989220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 2145.9989620000 seconds
+server average packet reception delay : 2.1459989620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 4.1919509620 seconds
+server average send time : 2.1459989620 seconds
+server average receive time : 2.1459989620 seconds
+server average throughput : 1001.0010010010 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0040919040 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 1075.7814481981 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 4.1960195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 4.1960320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 1077.8634820106 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 4.1960060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 4.1960195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =1076.8225097656Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.384s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 2Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 2000000.0000000000 bps
+m_sendInterval : 0.0020480000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 2.1480000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 2.1480060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 2.1480130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 1123.0709285600 seconds
+client average received packet delay : 1.1230709286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 2.1459520010 seconds
+client average send time : 1.1229760010 seconds
+client average receive time : 1.1230709286 seconds
+client average throughput : 2002.0020020020 kbps
+client send interval :0.0020480000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0020459454 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 2.1460469220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 1123.0229620000 seconds
+server average packet reception delay : 1.1230229620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 2.1459989620 seconds
+server average send time : 1.1230229620 seconds
+server average receive time : 1.1230229620 seconds
+server average throughput : 2002.0020020020 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0020459520 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 2101.4706206393 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 2.1480195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 2.1480320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 2109.8775997451 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 2.1480060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 2.1480195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =2105.6740722656Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.377s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 4Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 4000000.0000000000 bps
+m_sendInterval : 0.0010240000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 1.1240000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 1.1240060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 1.1240130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 611.5829285600 seconds
+client average received packet delay : 0.6115829286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 1.1229760010 seconds
+client average send time : 0.6114880010 seconds
+client average receive time : 0.6115829286 seconds
+client average throughput : 4004.0040040040 kbps
+client send interval :0.0010240000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0010229694 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 1.1230709220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 611.5349620000 seconds
+server average packet reception delay : 0.6115349620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 1.1230229620 seconds
+server average send time : 0.6115349620 seconds
+server average receive time : 0.6115349620 seconds
+server average throughput : 4004.0040040040 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0010229760 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 4015.9443452960 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 1.1240195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 1.1240320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 4047.5821270400 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 1.1240060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 1.1240195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =4031.7631835938Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.348s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 8Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 8000000.0000000000 bps
+m_sendInterval : 0.0005120000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.6120000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.6120060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.6120130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 355.8389285600 seconds
+client average received packet delay : 0.3558389286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.6114880010 seconds
+client average send time : 0.3557440010 seconds
+client average receive time : 0.3558389286 seconds
+client average throughput : 8008.0080080080 kbps
+client send interval :0.0005120000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0005114814 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.6115829220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 355.7909620000 seconds
+server average packet reception delay : 0.3557909620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.6115349620 seconds
+server average send time : 0.3557909620 seconds
+server average receive time : 0.3557909620 seconds
+server average throughput : 8008.0080080080 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0005114880 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 7375.5812520509 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.6120195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.6120320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 7484.4112508290 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.6120060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.6120195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =7429.9960937500Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.361s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 16Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 16000000.0000000000 bps
+m_sendInterval : 0.0002560000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.3560000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.3560060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.3560130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 227.9669285600 seconds
+client average received packet delay : 0.2279669286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.3557440010 seconds
+client average send time : 0.2278720010 seconds
+client average receive time : 0.2279669286 seconds
+client average throughput : 16016.0160160160 kbps
+client send interval :0.0002560000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0002557374 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.3558389220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 227.9189620000 seconds
+server average packet reception delay : 0.2279189620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.3557909620 seconds
+server average send time : 0.2279189620 seconds
+server average receive time : 0.2279189620 seconds
+server average throughput : 16016.0160160160 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0002557440 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 12679.0786082678 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.3560195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.3560320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 13006.2644111996 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.3560060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.3560195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =12842.6708984375Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.362s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 32Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 32000000.0000000000 bps
+m_sendInterval : 0.0001280000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.2280000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.2280060010
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.2280130010 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 1000 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 512000 bytes
+client average received packet size  : 512.0000000000 bytes
+client min received packet size      : 512 bytes
+client max received packet size      : 512 bytes
+client packet total transmission time : 164.0309285600 seconds
+client average received packet delay : 0.1640309286 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.2278720010 seconds
+client average send time : 0.1639360010 seconds
+client average receive time : 0.1640309286 seconds
+client average throughput : 32032.0320320320 kbps
+client send interval :0.0001280000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0001278654 seconds
+512 ==> 1000
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.2279669220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 1000 packets
+server packets received              : 1000 packets
+server bytes sent                    : 512000 bytes
+server bytes received                : 512000 bytes
+server average received packet size : 512.0000000000 bytes
+server min received packet size     : 512 bytes
+server max received packet size     : 512 bytes
+server packet total transmission time : 163.9829620000 seconds
+server average packet reception delay : 0.1639829620 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.2279189620 seconds
+server average send time : 0.1639829620 seconds
+server average receive time : 0.1639829620 seconds
+server average throughput : 32032.0320320320 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0001278720 seconds
+512 ==> 1000
+server SENT Packet size histgram     : 
+512 ==> 1000
+Number of events : 22196
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1005
+Received Packets =1005
+Send bytes by 10.1.1.1 : 564252
+Received bytes by 10.1.1.2 : 564252
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0560178800 seconds
+Jitter =0.0091007600 seconds
+Throughput out of 10.1.1.1 : 19796.5471918438 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.2280195610 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.2280320810 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1004
+Received Packets =1004
+Send bytes by 10.1.1.2 : 564212
+Received bytes by 10.1.1.1 : 564212
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =0.0550134800 seconds
+Jitter =0.0071139600 seconds
+Throughput out of 10.1.1.2 : 20608.5630584196 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.2280060010 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.2280195610 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2009 packets
+Total Received Packets =2009 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =20202.5546875000Kbps
+End to End Delay =0.1110313600 seconds
+End to End Jitter =0.0162147200 seconds
+Server Number of collisions : 1003 collisions
+Client Number of collisions : 6 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.383s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 64Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 64000000.0000000000 bps
+m_sendInterval : 0.0000640000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.1640000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.1765081220
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.1919466820 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 673 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 359248 bytes
+client average received packet size  : 533.8008915305 bytes
+client min received packet size      : 224 bytes
+client max received packet size      : 536 bytes
+client packet total transmission time : 103.3346345060 seconds
+client average received packet delay : 0.1535432905 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.1639360010 seconds
+client average send time : 0.1319680010 seconds
+client average receive time : 0.1535432905 seconds
+client average throughput : 64064.0640640641 kbps
+client send interval :0.0000640000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0001364713 seconds
+224 ==> 1
+352 ==> 1
+464 ==> 1
+512 ==> 38
+536 ==> 632
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.1919466820 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 946 packets
+server packets received              : 946 packets
+server bytes sent                    : 504832 bytes
+server bytes received                : 504832 bytes
+server average received packet size : 533.6490486258 bytes
+server min received packet size     : 264 bytes
+server max received packet size     : 536 bytes
+server packet total transmission time : 132.6601712920 seconds
+server average packet reception delay : 0.1402327392 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.1765081220 seconds
+server average send time : 0.1402327392 seconds
+server average receive time : 0.1402327392 seconds
+server average throughput : 52819.7061096117 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0000808258 seconds
+264 ==> 1
+328 ==> 1
+352 ==> 1
+464 ==> 1
+512 ==> 62
+536 ==> 880
+server SENT Packet size histgram     : 
+264 ==> 1
+328 ==> 1
+352 ==> 1
+464 ==> 1
+512 ==> 62
+536 ==> 880
+Number of events : 16999
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 1140
+Received Packets =1140
+Send bytes by 10.1.1.1 : 564116
+Received bytes by 10.1.1.2 : 564116
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =4.3031169200 seconds
+Jitter =0.0997529600 seconds
+Throughput out of 10.1.1.1 : 23506.5277137742 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.1919466820 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.1921724420 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 1042
+Received Packets =1042
+Send bytes by 10.1.1.2 : 413436
+Received bytes by 10.1.1.1 : 413436
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =3.6638841200 seconds
+Jitter =0.1071614800 seconds
+Throughput out of 10.1.1.2 : 18291.1232432211 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.1898174420 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.1919466820 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =2182 packets
+Total Received Packets =2182 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =20898.8261718750Kbps
+End to End Delay =7.9670010400 seconds
+End to End Jitter =0.2069144400 seconds
+Server Number of collisions : 254 collisions
+Client Number of collisions : 239 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.377s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 128Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 128000000.0000000000 bps
+m_sendInterval : 0.0000320000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.1320000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.1498503220
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.1573303220 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 506 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 270848 bytes
+client average received packet size  : 535.2727272727 bytes
+client min received packet size      : 408 bytes
+client max received packet size      : 536 bytes
+client packet total transmission time : 67.0515663720 seconds
+client average received packet delay : 0.1325129770 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.1319680010 seconds
+client average send time : 0.1159840010 seconds
+client average receive time : 0.1325129770 seconds
+client average throughput : 128128.1281281281 kbps
+client send interval :0.0000320000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0001119977 seconds
+408 ==> 1
+512 ==> 10
+536 ==> 495
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.1573303220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 506 packets
+server packets received              : 506 packets
+server bytes sent                    : 270848 bytes
+server bytes received                : 270848 bytes
+server average received packet size : 535.2727272727 bytes
+server min received packet size     : 408 bytes
+server max received packet size     : 536 bytes
+server packet total transmission time : 63.5926680520 seconds
+server average packet reception delay : 0.1256772096 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.1498503220 seconds
+server average send time : 0.1256772096 seconds
+server average receive time : 0.1256772096 seconds
+server average throughput : 43506.7834780625 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0000984256 seconds
+408 ==> 1
+512 ==> 10
+536 ==> 495
+server SENT Packet size histgram     : 
+408 ==> 1
+512 ==> 10
+536 ==> 495
+Number of events : 10600
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 627
+Received Packets =627
+Send bytes by 10.1.1.1 : 303456
+Received bytes by 10.1.1.2 : 303456
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =2.4332570400 seconds
+Jitter =0.0415540000 seconds
+Throughput out of 10.1.1.1 : 15426.1427113840 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.1573303220 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.1583260020 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 620
+Received Packets =620
+Send bytes by 10.1.1.2 : 303092
+Received bytes by 10.1.1.1 : 303092
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =2.3189390000 seconds
+Jitter =0.0451451200 seconds
+Throughput out of 10.1.1.2 : 16549.6174942347 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.1554880020 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.1573303220 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =1247 packets
+Total Received Packets =1247 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =15987.8798828125Kbps
+End to End Delay =4.7521960400 seconds
+End to End Jitter =0.0866991200 seconds
+Server Number of collisions : 137 collisions
+Client Number of collisions : 138 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.491s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 256Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 256000000.0000000000 bps
+m_sendInterval : 0.0000160000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.1160000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.1379081220
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.1410566820 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 359 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 192000 bytes
+client average received packet size  : 534.8189415042 bytes
+client min received packet size      : 352 bytes
+client max received packet size      : 536 bytes
+client packet total transmission time : 44.4664602380 seconds
+client average received packet delay : 0.1238620062 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.1159840010 seconds
+client average send time : 0.1079920010 seconds
+client average receive time : 0.1238620062 seconds
+client average throughput : 256256.2562562563 kbps
+client send interval :0.0000160000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0001125270 seconds
+352 ==> 1
+512 ==> 10
+536 ==> 348
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.1410566820 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 359 packets
+server packets received              : 359 packets
+server bytes sent                    : 192000 bytes
+server bytes received                : 192000 bytes
+server average received packet size : 534.8189415042 bytes
+server min received packet size     : 352 bytes
+server max received packet size     : 536 bytes
+server packet total transmission time : 42.5385355180 seconds
+server average packet reception delay : 0.1184917424 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.1379081220 seconds
+server average send time : 0.1184917424 seconds
+server average receive time : 0.1184917424 seconds
+server average throughput : 40569.2799692350 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0001054628 seconds
+352 ==> 1
+512 ==> 10
+536 ==> 348
+server SENT Packet size histgram     : 
+352 ==> 1
+512 ==> 10
+536 ==> 348
+Number of events : 7849
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 437
+Received Packets =437
+Send bytes by 10.1.1.1 : 214728
+Received bytes by 10.1.1.2 : 214728
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =1.5532289200 seconds
+Jitter =0.0317993600 seconds
+Throughput out of 10.1.1.1 : 12172.4116550537 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.1410566820 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.1418228420 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 423
+Received Packets =423
+Send bytes by 10.1.1.2 : 214000
+Received bytes by 10.1.1.1 : 214000
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =1.4856396800 seconds
+Jitter =0.0327860000 seconds
+Throughput out of 10.1.1.2 : 13267.2407755130 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.1380590020 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.1410566820 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =860 packets
+Total Received Packets =860 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =12719.8261718750Kbps
+End to End Delay =3.0388686000 seconds
+End to End Jitter =0.0645853600 seconds
+Server Number of collisions : 104 collisions
+Client Number of collisions : 106 collisions
+Total Flod id 2
+Waf: Entering directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Waf: Leaving directory `/home/kali/ns3/ns-allinone-3.34/ns-3.34/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.519s)
+error_rate : 0
+use_csma : 1
+channel_data_rate : 100Mbps
+channel_delay : 0.0000004s
+point_to_point_queue_size : 100p
+server_echo_factor : 1
+server_echo_delay : 0
+client_data_rate : 512Mbps
+client_packets_count : 1000
+client_packet_size : 512
+client_start_time : 0
+client_send_time : 0.1
+server_start_time : 0
+client_stop_time : 100
+server_stop_time : 100
+simulation_length : 100
+new_reno_enabled : 0
+Setting up server ...
+server address : 10.1.1.2
+data rate : 512000000.0000000000 bps
+m_sendInterval : 0.0000080000 seconds
+TcpEchoClient::StartApplication At : 0.0000000000 second
+TcpEchoClient::ConnectionSucceeded  AT : 0.0160387200 seconds
+First client send at : 0.0839612810 seconds
+ACCEPT IN ECHO SERVER from 10.1.1.1
+Accept at : 0.0160457200 seconds
+Client is done sending packets , will close
+client close time : 0.1080000010 seconds
+tcp echo server will close because of closed connection
+Simulation close time now : 0.1308764420
+ SERVER PEER CLOSE 
+TcpEchoClient::HandleClose
+Simulation close time now : 0.1354813220 seconds
+client lost packets : 0
+----------------   Appllication level stats for client app -------------
+client intended packets sent         : 1000 packets
+client packets sent                  : 1000 packets
+client packets received              : 305 packets
+client bytes sent                    : 512000 bytes
+client bytes received                : 162816 bytes
+client average received packet size  : 533.8229508197 bytes
+client min received packet size      : 112 bytes
+client max received packet size      : 536 bytes
+client packet total transmission time : 36.7830002500 seconds
+client average received packet delay : 0.1206000008 seconds
+client first packet send time : 0.1000000010 seconds
+client last packet send time : 0.1079920010 seconds
+client average send time : 0.1039960010 seconds
+client average receive time : 0.1206000008 seconds
+client average throughput : 512512.5125125126 kbps
+client send interval :0.0000080000 seconds
+client Packet size histgram          : 
+client reception average jitter : 0.0001141700 seconds
+112 ==> 1
+512 ==> 10
+536 ==> 294
+client sent Packet size histgram     : 
+512 ==> 1000
+client last packet receive time : 0.1354813220 seconds
+
+----------------   Appllication level stats for server app -------------
+server packets sent                  : 305 packets
+server packets received              : 305 packets
+server bytes sent                    : 162816 bytes
+server bytes received                : 162816 bytes
+server average received packet size : 533.8229508197 bytes
+server min received packet size     : 112 bytes
+server max received packet size     : 536 bytes
+server packet total transmission time : 35.3825166100 seconds
+server average packet reception delay : 0.1160082512 seconds
+server first packet send time : 0.1000469620 seconds
+server last packet send time : 0.1308764420 seconds
+server average send time : 0.1160082512 seconds
+server average receive time : 0.1160082512 seconds
+server average throughput : 42249.4313883984 kbps
+server Packet size histgram          : 
+server reception average jitter : 0.0001010803 seconds
+112 ==> 1
+512 ==> 10
+536 ==> 294
+server SENT Packet size histgram     : 
+112 ==> 1
+512 ==> 10
+536 ==> 294
+Number of events : 6903
+------- Phsysical layer stats ----------
+
+----Flow ID:1
+Src Addr 10.1.1.1 Dst Addr 10.1.1.2
+Sent Packets= 368
+Received Packets =368
+Send bytes by 10.1.1.1 : 181956
+Received bytes by 10.1.1.2 : 181956
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =1.2842969200 seconds
+Jitter =0.0272618000 seconds
+Throughput out of 10.1.1.1 : 10739.4877649629 Kbps
+first time send by 10.1.1.1  : 0.0000000000 seconds
+last time send by 10.1.1.1  : 0.1354813220 seconds
+first time received by 10.1.1.2  : 0.0090193600 seconds
+last time received by 10.1.1.2  : 0.1362076820 seconds
+----Flow ID:2
+Src Addr 10.1.1.2 Dst Addr 10.1.1.1
+Sent Packets= 352
+Received Packets =352
+Send bytes by 10.1.1.2 : 181124
+Received bytes by 10.1.1.1 : 181124
+Lost Packets =0
+Packet delivery ratio =100.0000000000%
+Packet loss ratio =0.0000000000%
+Delay =1.1957153600 seconds
+Jitter =0.0258059200 seconds
+Throughput out of 10.1.1.2 : 11873.1850036885 Kbps
+first time send by 10.1.1.2  : 0.0090193600 seconds
+last time send by 10.1.1.2  : 0.1309748420 seconds
+first time received by 10.1.1.1  : 0.0160387200 seconds
+last time received by 10.1.1.1  : 0.1354813220 seconds
+--------Total Results of the simulation physical layer----------
+
+Total sent packets  =720 packets
+Total Received Packets =720 packets
+Total Lost Packets =0 packets
+Packet Loss ratio =0.0000000000%
+Packet delivery ratio =100.0000000000%
+Average Throughput =11306.3359375000Kbps
+End to End Delay =2.4800122800 seconds
+End to End Jitter =0.0530677200 seconds
+Server Number of collisions : 93 collisions
+Client Number of collisions : 93 collisions
+Total Flod id 2
