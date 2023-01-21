@@ -103,7 +103,7 @@ Under the [results](results) folder you find the results table for both simulato
 
 This ![jupyter notebook](render_results_graphs.ipynb) file renders the results in the form of graphs.
 
-For the interpretation of the graphs, read the document ![results interpretation](results interpretation.pdf)
+For the interpretation of the graphs, read the document ![results interpretation](results_interpretation.pdf)
 
 **Where to go from here?**
 
