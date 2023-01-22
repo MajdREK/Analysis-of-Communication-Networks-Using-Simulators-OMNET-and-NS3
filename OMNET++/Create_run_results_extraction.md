@@ -1,18 +1,35 @@
-
-Create , run and results extraction 
+OMNeT++ Project Creation and Execution
 ======================
 
-This part explains the files used for our programme.
+This guide will walk you through the process of creating and running a project in OMNeT++.
 
-In the NS3 root directory, under the scratch folder,  three files are created :
+It's important to note that the below informations may vary depending on the complexity and requirements of the simulation.
 
-* WiredTcpClientServer.cc
-* run_point_to_point.sh
-* wired.txt
 
+Step 1: Start the OMNeT++ IDE
+---------------------
+Open the OMNeT++ IDE by running the "omnetpp" executable from the installation directory.
+
+Step 2: Create a new project
+---------------------
+Go to "File" -> "New" -> "Project...", select the "OMNeT++ Simulation Model" template, and click "Next". 
+
+Step 3: Name the project and select a location
+---------------------
+Give a name to the project and select a location for the project files. You can also choose to include a "README" file and a "makefile" with the project.
+
+Step 4: Select the network and channels
+---------------------
+In the "Project Structure" page, select the network and channels you want to use in the simulation. For example, if you want to simulate an IP network, you can select the "inet" network and the "IP" channel. You can also add additional modules, such as simple modules and compound modules, by clicking on the plus sign.
 These files are used to simulate a network with a server and client, transmitting data over a wired channel using two different types of protocols (CSMA/CD and PPP), and to collect and analyze the results of the simulation. Each file has a specific purpose. The WiredTcpClientServer.cc file contains the main C++ code for the simulation, while the run_point_to_point.sh file is used to configure and run the simulation. The wired.txt file is used to store the results of the simulation.
 
-The source code for each file can be found in the NS3_code folder, which is located under the NS3 folder in this Github repository.
+Step 5: Add new module
+---------------------
+To create a new module, you can right-click on the project and select "Add new module" and then select the type of module you want to create, for example, simple module, compound module, or network. you can also configure the properties of the module, such as its name and parameters.
+
+
+Step 6: Finish the project creation
+---------------------
 
 1- WiredTcpClientServer.cc
 ---------------------
