@@ -14,8 +14,6 @@ These files are used to simulate a network with a server and client, transmittin
 
 The source code for each file can be found in the NS3_code folder, which is located under the NS3 folder in this Github repository.
 
-
-
 1- WiredTcpClientServer.cc
 ---------------------
 This file contains the C++ code for the wired tcp client-server simulation. It contains the main code for the simulation where the behavior of the nodes, the network topology and other simulation parameters are defined.
@@ -42,8 +40,7 @@ The run_point_to_point.sh file is a shell script that is used to automate the pr
 * The simulation output is redirected to a file named wired.txt using the command | tee -a scratch/wired.txt
 * After the loop finishes, the script ends.
 
-Overall, this script automates the process of running the simulation multiple times with different parameters and collects the results in one file
-
+Overall, this script automates the process of running the simulation multiple times with different parameters and collects the results in one file.
 
 3- wired.txt
 ---------------------
@@ -52,12 +49,27 @@ The wired.txt file is used to store the results of the simulation that is run by
 
 The contents of the file will depend on the specific implementation of the simulation, and how the results are being collected and formatted. The file may be in a plain text format, and can be opened and viewed using a text editor such as Notepad , TextEdit or VS Code.
 
-3- Steps required for this project
+4- Steps required 
 --------------------- 
+**Step 1:**  Navigate to the Scratch directory.
 
+**Step 2:**  Create three new files in the "scratch" directory, named "WiredTcpClientServer.cc", "run_point_to_point.sh", and "wired.txt" by typing the following command:
+```
+$ touch WiredTcpClientServer.cc
+$ touch run_point_to_point.sh
+$ touch wired.txt
+```
+**Step 3:** Open the "WiredTcpClientServer.cc" file in your preferred text editor and copy and paste the C++ code for the simulation into this file.
 
+**Step 4:**  Open the "run_point_to_point.sh" file and copy and paste the code for the simulation into this file.
 
+**Step 5:**  Now, you can run the simulation by executing the "run_point_to_point.sh" file using the command "./waf --run wired" in the command prompt or terminal.
 
+```
+$ ./scratch/run_point_to_point.sh
+
+```
+Note: this command is excutble only in the ns-3.34 directory whre the waf s
 
 
 
