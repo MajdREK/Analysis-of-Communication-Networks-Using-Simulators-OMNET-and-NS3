@@ -1,0 +1,130 @@
+
+###################################################################
+[General]
+
+network = wirelesstcpclientserver.customClientServer
+#sim-time-limit = 500s
+total-stack = 1MiB
+description = "hostA <---> hostB"
+
+output-vector-file = "${resultdir}/${configname}-${runnumber}picou.vec"
+output-scalar-file = "${resultdir}/${configname}-${runnumber}picou.sca"
+
+
+
+
+sim-time-limit = 20s
+
+*.host*.ipv4.arp.typename = "GlobalArp"
+
+*.hostA.app[0].typename = "UdpBasicApp"
+*.hostA.app[0].destAddresses = "hostB"
+*.hostA.app[0].destPort = 5000
+*.hostA.app[0].messageLength = 1000B
+*.hostA.app[0].sendInterval = exponential(12ms)
+*.hostA.app[0].packetName = "UDPData"
+
+*.hostB.app[0].typename = "UdpSink"
+*.hostB.app[0].localPort = 5000
+
+
+
+
+
+
+
+## tcp apps
+**.numApps = 1
+
+
+**.hostA*.app[*].typename = "CustomTcpSessionApp"
+**.hostA*.app[0].active = true
+**.hostA*.app[0].localPort = -1
+**.hostA*.app[0].connectAddress = "hostB"
+**.hostA*.app[0].connectPort = 8080
+**.hostA*.app[0].sendScript = ""
+**.hostA*.app[0].packetsCount = 1000
+**.hostA*.app[0].dataRate = 256Mbps
+**.hostA*.app[0].numBytes = 1024B
+**.hostA*.app[0].tOpen = 0s
+**.hostA*.app[0].tSend = 0s
+**.hostA*.app[0].tClose = 1000s
+
+
+**.hostB*.app[*].typename = "CustomTcpEchoApp"
+**.hostB*.app[0].echoDelay = 0s
+**.hostB*.app[0].echoFactor = 1
+**.hostB*.app[0].localPort = 8080
+
+**.app[*].dataTransferMode = "bytestream" 
+
+
+
+
+
+
+
+# default TCP implementation
+**.tcp.typename = "Tcp"
+**.tcp.advertisedWindow = 10240
+**.tcp.nagleEnabled = false
+
+
+
+
+
+
+
+
+
+
+
+
+
+*.host*.wlan[0].typename = "AckingWirelessInterface"
+*.host*.wlan[0].mac.useAck = false
+*.host*.wlan[0].mac.fullDuplex = false
+*.host*.wlan[0].radio.transmitter.communicationRange = 500m
+*.host*.wlan[0].radio.receiver.ignoreInterference = true
+
+*.host*.**.bitrate = 1Mbps
+
+
+#**.result-recording-modes = +sum 
+#**.result-recording-modes = +count
+**.channel.**.result-recording-modes =count, sum , histogram,stats,max,min,mean
+
+# pcap
+**.hostB.hasPcapRecorder = true
+**.hostB.pcapRecorder.pcapFile = "results/hostB.pcap"
+**.hostA1.hasPcapRecorder = true
+**.hostA1.pcapRecorder.pcapFile = "results/hostA1.pcap"
+**.pcapRecorder.pcapLinkType = 204     # Ppp
+
+# pcap
+**.hostB.hasPcapRecorder = true
+**.hostB.pcapRecorder.pcapFile = "results/hostB.pcap"
+**.hostA1.hasPcapRecorder = true
+**.hostA1.pcapRecorder.pcapFile = "results/hostA1.pcap"
+**.pcapRecorder.pcapLinkType = 204     # Ppp
+
+
+**.queue.typename = "DropTailQueue"
+**.queue.dataQueue.typename = "DropTailQueue"
+**.queue.packetCapacity = 1000
+**.queue.dataQueue.packetCapacity = 1000
+**.queue.dataCapacity = 102400Byte
+**.queue.dataQueue.dataCapacity =102400Byte
+
+
+
+
+
+
+
+
+
+*.configurator.config=xml("<config><interface hosts='*' address='192.168.1.x' netmask='255.255.255.0'/></config>")
+
+
+
