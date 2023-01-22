@@ -1,8 +1,15 @@
 
-NS-3 on Windows using WSL
+Create , run and results extraction 
 ======================
 
-Here are the general steps for installing NS-3 on a Windows operating system using WSL1. This section aims to put a user in a working state that may never have used the NS-3 simulator before. It covers the necessary prerequisites, installation steps , construction and verification of a building by running a simple programme.
+This part explains the file used for our programme .
+
+Three file are used for this project in NS3 as part of a simulation of a network with a client and  server. Each file has a specific purpose. Here we will explore each file separately. 
+
+These files are named as follows: 
+* WiredTcpClientServer.cc
+* run_point_to_point.sh
+* wired.txt
 
 
 1- Install Windows Subsystem for Linux (WSL) on your Windows computer
