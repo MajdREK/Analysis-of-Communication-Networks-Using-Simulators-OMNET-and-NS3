@@ -177,7 +177,7 @@ $  cd scratch
 To confirm that you are in the correct directory, you can use the  **"pwd"** command, which will display the current working directory.
 Once you are in the "scratch" folder, you can create a new file by running the command
 ```
-$  touch filename.cc
+$  touch filename.ccd
 ```
 Note: **"filename"** is the name of your new file.
 Next, open the new file in a text editor by running the command
