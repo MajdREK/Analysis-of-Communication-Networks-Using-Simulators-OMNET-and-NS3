@@ -17,22 +17,24 @@ Installation Steps
 
 1- Create a new folder on your desktop called "OMNeT++".
 
-2- Download the OMNeT++ source code from the official website (https://omnetpp.org/download/old) and extract it to the "OMNeT++" folder.
+2- Download the OMNeT++ version 5.6.2 installer for Windows from the official website (https://omnetpp.org/download/old/).
 
-3- Open the "mingwenv" terminal from the extracted folder.
+3- Extract the downloaded file to the "OMNeT++" folder.
 
-4- Run the following command to configure the installation:
+4- Open the "mingwenv" terminal from the extracted folder.
+
+5- Run the following command to configure the installation:
 ```
 $ ./configure
 ```
 
-5- Run the following command to build the software:
+6- Run the following command to build the software:
 
 ```
 $ make
 ```
 
-6- Once the installation is complete, verify the installation of OMNeT++ and ensure that all the sample files are installed correctly, you can run one of the sample simulations that come with the installation. by using the following command in the "mingwenv" terminal:
+7- Once the installation is complete, verify the installation of OMNeT++ and ensure that all the sample files are installed correctly, you can run one of the sample simulations that come with the installation. by using the following command in the "mingwenv" terminal:
 ```
 $ cd samples/aloha
 ```
@@ -44,7 +46,7 @@ $ ./aloha
 This will run the simulation and open a new window that shows the results. If the simulation runs successfully and you can see the results, it means that OMNeT++ is installed correctly and all the sample files are working properly.
 
 
-7-   you can start the OMNeT++ IDE by running the following command in the "mingwenv" terminal:
+8-  you can start the OMNeT++ IDE by running the following command in the "mingwenv" terminal:
 ```
 $ omnetpp
 ``` 
