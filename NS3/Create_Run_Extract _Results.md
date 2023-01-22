@@ -77,6 +77,8 @@ Note: This command can only be executed in the root directory of your NS-3, whic
 ```
 $ grep -E "client intended packets sent" scratch/wired.txt
 ```
+The specific pattern being searched for in this command is "client intended packets sent", which is output by the WiredTcpClientServer.cc program . The file being searched is scratch/wired.txt, which is the file where the results of the simulation are stored.
 
+The command searches for the pattern "client intended packets sent" in the wired.txt file and returns all the lines that contain this output. This command is useful for extracting specific information from the output file and making it easier to analyze the simulation results.
 
 
