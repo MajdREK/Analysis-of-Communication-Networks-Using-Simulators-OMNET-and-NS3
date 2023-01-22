@@ -16,20 +16,17 @@ Go to "File" -> "New" -> "Project...", select the "OMNeT++ Simulation Model" tem
 
 Step 3: Name the project and select a location
 ---------------------
-Give a name to the project and select a location for the project files. You can also choose to include a "README" file and a "makefile" with the project.
+Give a name to the project and select a location for the project files, and click "Next". 
 
-Step 4: Select the network and channels
----------------------
-In the "Project Structure" page, select the network and channels you want to use in the simulation. For example, if you want to simulate an IP network, you can select the "inet" network and the "IP" channel. You can also add additional modules, such as simple modules and compound modules, by clicking on the plus sign.
-These files are used to simulate a network with a server and client, transmitting data over a wired channel using two different types of protocols (CSMA/CD and PPP), and to collect and analyze the results of the simulation. Each file has a specific purpose. The WiredTcpClientServer.cc file contains the main C++ code for the simulation, while the run_point_to_point.sh file is used to configure and run the simulation. The wired.txt file is used to store the results of the simulation.
 
-Step 5: Add new module
+Step 4: Choose the initial Contents
 ---------------------
-To create a new module, you can right-click on the project and select "Add new module" and then select the type of module you want to create, for example, simple module, compound module, or network. you can also configure the properties of the module, such as its name and parameters.
+In this step choose the **"Empty project with 'src and simulation' folder"** , and click "Next". 
 
 
 Step 6: Finish the project creation
 ---------------------
+by clicking finish afetr selcting the contents of the project.
 
 1- WiredTcpClientServer.cc
 ---------------------
