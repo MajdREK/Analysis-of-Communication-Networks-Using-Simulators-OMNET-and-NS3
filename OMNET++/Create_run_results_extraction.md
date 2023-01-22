@@ -8,7 +8,7 @@ It's important to note that the below informations may vary depending on the com
 
 Step 1: Start the OMNeT++ IDE
 ---------------------
-Open the OMNeT++ IDE by running the "omnetpp" executable from the installation directory.
+Open the OMNeT++ IDE by running the "omnetpp" executable fromin the "mingwenv" terminal.
 
 Step 2: Create a new project
 ---------------------
