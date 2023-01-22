@@ -1,5 +1,8 @@
 # Analysis-of-Communication-Networks-Using-Simulators-OMNET-and-NS3
-Master Thesis in University of Applied Sciences Berlin : Communication networks are analyzed using NS3 and OMNET++. The two simulators are studied and compared based on network performance criteria such as packet loss rate, throughput, end-to-end delay, jitter, collisions, number of events, and simulation time.
+
+The project "Analysis of Communication Networks Using Simulators OMNET++ and NS3" is a Master's thesis done at the University of Applied Sciences Berlin. 
+The objective of the Master's thesis project is to investigate and compare the performance of the OMNET++ and NS3 network simulators.
+The project creates identical simulations for each simulator and measures key network performance metrics such as packet loss rate, throughput, end-to-end delay, jitter, collisions, number of events, and simulation time.  The focus of the project is on simulating legacy telecommunications technologies such as CSMA/CD and PPP protocols. The results of the simulations are analyzed in depth to determine the relative performance of each simulator.
 
 **Why this work was needed?** 
 
