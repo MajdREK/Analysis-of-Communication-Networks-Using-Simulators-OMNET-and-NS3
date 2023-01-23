@@ -4,12 +4,11 @@
 ---------------------
 Communication networks are an essential part of modern society, and their efficient and reliable operation is crucial for various applications such as the internet, telecommunication, and transportation systems. One of the key methods to analyze and design communication networks is through simulation, which allows for the testing and evaluation of different network configurations and protocols in a controlled environment.
 
-This Master's Thesis studies the use of OMNET++ and NS3 network simulators for analyzing communication networks. The study compares the performance of the two simulators based on network performance criteria such as packet loss rate, throughput, end-to-end delay, jitter, collisions, number of events, and simulation time. This work is necessary due to a lack of research comparing the two simulators when it comes to simulating legacy telecommunication technologies such as CSMA/CD and PPP protocols and an increasing interest in newer protocols like Wi-Fi.
+This Master's Thesis studies the use of OMNET++ and NS3 network simulators for analyzing communication networks. The study compares the performance of the two simulators based on network performance criteria such as packet loss rate, throughput, end-to-end delay, jitter, collisions, number of events, and simulation time. This work is necessary due to a lack of research comparing the two simulators when it comes to simulating legacy telecommunication technologies such as CSMA/CD and PPP protocols.
 
 ## Motivation
 ---------------------
 CSMA/CD and PPP protocols were chosen in this study as they are legacy telecommunication technologies that have been widely used in the past and have a significant impact on the performance of communication networks. Despite their widespread use, there is a lack of research comparing the performance of these protocols when simulated using OMNET++ and NS3. Additionally, simulating these mature and standardized protocols should result in accurate and reliable results, making them a valuable addition to the study.
-Results
 
 ## Technical requirements
 ---------------------
@@ -27,11 +26,9 @@ Results
 
 ## Usage
 ---------------------
-* The project includes simulation codes for both OMNET++ and NS3. Once the project is set up, following the instructions in the README file, the user can run the simulation in Both OMNET++ and  NS3 .
-* The simulation can be started, paused, and resumed at any time as per the user's preference. This allows the user to control the simulation and make adjustments as needed.
-* The results of the simulation can be viewed in real-time on the OMNET++ or NS3  while the simulation is running. This allows the user to monitor the progress of the simulation and make adjustments if necessary.
+* This repository includes simulation codes for both OMNET++ and NS3. Once the project is set up, following the instructions in the README file, the user can run the simulation in Both OMNET++ and  NS3 .
 * The simulation allows the user to adjust various parameters such as client data rate, protocol settings (PPP, CSMA/CD), packet size, client delay, server delay, packet echoed to the client, to analyze the impact of different scenarios on network performance.
-* The results can be exported from the IDE in the form of graphs and tables. These results can then be analyzed further using other software such as Excel or Google Colab to gain deeper insights and draw more accurate conclusions.
+* The results can be exported from the IDE/Console in the form of graphs and tables. These results can then be analyzed further using other software such as Excel or Google Colab to gain deeper insights and draw more accurate conclusions.
 
 
 ## Methodology
