@@ -26,7 +26,7 @@ Usage
 ---------------------
 * The project includes simulation codes for both OMNET++ and NS3. Once the project is set up, following the instructions in the README file, the user can run the simulation in Both OMNET++ and  NS3 .
 * The simulation can be started, paused, and resumed at any time as per the user's preference. This allows the user to control the simulation and make adjustments as needed.
-* The results of the simulation can be viewed in real-time on the OMNET++ or NS3 IDE while the simulation is running. This allows the user to monitor the progress of the simulation and make adjustments if necessary.
+* The results of the simulation can be viewed in real-time on the OMNET++ or NS3  while the simulation is running. This allows the user to monitor the progress of the simulation and make adjustments if necessary.
 * The simulation allows the user to adjust various parameters such as client data rate, protocol settings (PPP, CSMA/CD), packet size, client delay, server delay, packet echoed to the client, to analyze the impact of different scenarios on network performance.
 * The results can be exported from the IDE in the form of graphs and tables. These results can then be analyzed further using other software such as Excel or Google Colab to gain deeper insights and draw more accurate conclusions.
 
@@ -45,12 +45,17 @@ The results of the simulation will  include the following network performance me
 Conclusion
 ---------------------
 The results of the simulation show that both OMNET++ and NS3 are powerful network simulators that can be used to analyze different scenarios and network performance. 
-While both simulators have their strengths and weaknesses, the results of the simulation indicate that both OMNET++ and NS3 are valuable tools and provides valuable insights for network simulation and analysis, and the choice between them will depend on the specific requirements of the project.
+While both simulators have their strengths and weaknesses, the results of the simulation indicate that NS3 has higher packet loss rates and jitter values, while OMNET++ has zero packet loss and lower jitter values. NS3 has a decreasing trend in end-to-end delay as the client data rate increases, while OMNET++ has an unchanged delay until a critical data rate is reached. In terms of collisions and throughput, OMNET++ has less collisions and higher throughput than NS3. Additionally, OMNET++ generates more events in the simulation process. The choice of simulator ultimately depends on the specific requirements of the network scenario being simulated.
 
+In conclusion, while both NS3 and OMNET++ have their strengths and weaknesses, they both provide valuable insights into network performance and can be used to evaluate and optimize network design. The choice of simulator depends on the specific requirements of the network scenario being simulated. OMNET++ is suitable for simulating scenarios with a high level of accuracy and detail, while NS3 is more suitable for scenarios that require a more efficient simulation process.
 
 
 Future work 
 ---------------------
+In terms of future work, there are several areas that could be further explored to improve the understanding of the performance of NS3 and OMNET++. One area of focus could be to investigate the impact of different network protocols on the results obtained in this study. For example, by comparing the performance of the two simulators when using TCP and UDP protocols. Additionally, the impact of different network topologies, such as mesh and star networks, on the performance of the two simulators could be studied.
+Another area of focus could be to investigate the performance of the two simulators in more complex network scenarios, such as those involving multiple clients and servers. This would allow for a more in-depth analysis of how the different characteristics of the simulators impact the overall performance of the network.
+It could also be interesting to compare the performance of the two simulators in wireless networks, and see if the results are similar or different from those obtained in this study for wired networks.
+Finally, it would be beneficial to evaluate the performance of the two simulators using real-world measurements and data, in order to validate the results obtained in this study and to better understand the real-world applicability of the two simulators.
 
 Note
 ---------------------
