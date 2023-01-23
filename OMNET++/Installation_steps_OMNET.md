@@ -46,7 +46,8 @@ Additional Notes
 ---------------------
 * The INET framework will automatically be installed to provide the user with the primary library for the simulation of communication networks.
 
-* INET (Internet Protocol (IP) Network Simulation Framework) is a simulation framework that provides the necessary modules and libraries to simulate communication networks. It is a widely used framework in OMNeT++ and is included by default with the installation of OMNeT++. INET provides a wide range of features and functionalities to simulate communication networks such as: Support for IPv4, IPv6, and MPLS protocols.
+* INET (Internet Protocol (IP) Network Simulation Framework) is a simulation framework that provides the necessary modules and libraries to simulate communication networks. It is a widely used framework in OMNeT++ and is included by default with the installation of OMNeT++. INET provides a wide range of features and functionalities to simulate communication networks such as: 
+                                                            Support for IPv4, IPv6, and MPLS protocols.
                                                             Support for wired and wireless networks.
                                                             Support for transport protocols such as TCP, UDP, and SCTP.
                                                             Support for routing protocols such as OSPF, BGP, and AODV.
