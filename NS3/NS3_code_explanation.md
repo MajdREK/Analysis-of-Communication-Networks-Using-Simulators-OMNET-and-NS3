@@ -81,20 +81,7 @@ The class also maintains several member variables to keep track of statistics su
 * A TcpEchoServer and TcpEchoClient application are created and added to the corresponding nodes
 * The start and stop time for the client and server applications are set using the variables "client_start_time", "client_stop_time", "server_start_time", and "server_stop_time"
 * Other parameters for the client and server applications are also set such as packet size, packet count, data rate, and echo delay.
-        
-        
-* Packet loss is calculated  by comparing the number of packets sent by a sender to the number of packets successfully received by the receiver.
-
-On the client side, the TcpEchoClient class has member variables m_packetsSent and m_packetsRecieved. The variable m_packetsSent keeps track of the number of packets sent by the client, while the variable m_packetsRecieved keeps track of the number of packets successfully received by the client. The packet loss on the client side is calculated by dividing the number of sent packets that were not received by the number of sent packets. This is done in the TcpEchoClient's StopApplication() method.
-
-On the server side, the TcpEchoServer class has member variables m_packetsSent and m_packetsRecieved. The variable m_packetsSent keeps track of the number of packets sent by the server, while the variable m_packetsRecieved keeps track of the number of packets successfully received by the server. The packet loss on the server side is calculated by dividing the number of sent packets that were not received by the number of sent packets. This is done in the TcpEchoServer's StopApplication() method.
-        
-It's worth noting that these calculations are done after the simulation has ended and the TcpEchoClient and TcpEchoServer's StopApplication() methods are called. This means that the packet loss is calculated using the final values of m_packetsSent and m_packetsRecieved.
-  
-* The number of bytes transmitted is calculated by keeping track of the number of bytes sent and received by both the client and the server. In the TcpEchoClient class, the number of bytes sent is incremented in the SendPacket function, and the number of bytes received is incremented in the HandleRead function. In the TcpEchoServer class, the number of bytes sent is incremented in the SendEchoPacket function, and the number of bytes received is incremented in the HandleRead function.
-        
-* 
-        
+              
 ====> In summary, the provided C++ code is a simulation of a client-server network using the ns-3 library. The simulation creates two nodes, one acting as the client and one acting as the server, and connects them via either a CSMA or Point-to-Point channel. Error rate is also introduced to the simulation through the use of a RateErrorModel. The client and server applications, TcpEchoClient and TcpEchoServer, respectively, are then installed on the corresponding nodes. The TcpEchoClient sends packets to the TcpEchoServer, which then echoes them back with a delay and a specified echo factor. The simulation also includes the ability to capture pcap traces for the devices, and several statistics are collected and printed out at the end of the simulation such as packets sent and received, bytes sent and received, and packet delay.
 
 
