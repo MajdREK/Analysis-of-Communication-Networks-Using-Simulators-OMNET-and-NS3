@@ -27,10 +27,10 @@ This table shows the default setup configuration:
 CSMA/CD and PPP protocols were chosen in this study as they are legacy telecommunication technologies that have been widely used in the past and have a significant impact on the performance of communication networks. Despite their widespread use, there is a lack of research comparing the performance of these protocols when simulated using OMNET++ and NS3. Additionally, simulating these mature and standardized protocols should result in accurate and reliable results, making them a valuable addition to the study.
 Results
 
+## Conclusion
+
 The results of the simulation were analyzed and compared based on the network performance criteria mentioned above.
 The study found that when simulating the half-duplex CSMA/CD protocol, NS3 gave more realistic results than OMNET++. This is because NS3 allows the simulation of the Tx buffer size while OMNET++ has an unlimited Tx buffer size. Additionally, the study found that OMNET++ had a shorter simulation time than NS3.
-
-## Conclusion
 
 The study found that OMNET++ and NS3 both have their strengths and weaknesses when it comes to simulating communication networks. OMNET++ is a more general-purpose simulator that can simulate other fields besides networks, (such as transportation system, power systems and some biological system) while NS3 is more specialized in network simulations. However, when it comes to simulating legacy telecommunication technologies such as CSMA/CD and PPP protocols, the study found that NS3 gave more realistic results than OMNET++. Additionally, the study found that OMNET++ has modules ( The Tcp section of Inet framework ) that are unfinished and contain comments such as 'Todo'. OMNET++ could simulate the TxBuffer size if an extension named TcpNsc was used.
 
