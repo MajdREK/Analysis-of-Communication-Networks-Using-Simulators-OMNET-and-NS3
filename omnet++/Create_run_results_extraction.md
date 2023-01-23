@@ -70,6 +70,15 @@ To run simulations, an OMNeT++ , open the "omnetpp.ini" file, located in the pro
 ![run_project](run_project.png?raw=true "Title")
 
 Then the following window should appear:
+![qtenv](qtenv.png?raw=true "Title") 
+
+In this case, w have to choose the configuration before we can use the run button. The "Run" button is represented by a red arrow and can be found on the toolbar located at the top of the screen.
+
+Results extraction  Using the OMNeT++ IDE
+======================
+Based on the standard configuration, the raw results (vector and scalar) collected after a simulation run are located in the simulation/results folder.
+
+OMNET++ generate results file (*.vec or *.sca) under the simulation/results folder. Now open the folder Result ->duble click on the file with .sca extation 
 
 The simulation will begin running and you can view the OMNET++ QTenv in the "Simulation Output" window. 
 
