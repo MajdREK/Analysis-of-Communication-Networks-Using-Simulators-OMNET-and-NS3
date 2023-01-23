@@ -33,19 +33,33 @@ CSMA/CD and PPP protocols were chosen in this study as they are legacy telecommu
 
 ## Methodology
 ---------------------
-To conduct the study, two identical projects were created, one for each simulator. The default setup for the simulation included a wired peer-to-peer network with a client and a server running a single TCP application. The cable was configured with a data rate of 100Mbps and a delay of 0.4 microseconds. The client sent a preset number of packets to the server periodically at a configurable data rate. The simulation was run with two different cable types: full-duplex mode with PPP protocol and half-duplex mode with CSMA/CD protocol.
+We conducted the study by creating two identical projects, one for each simulator (OMNET++ 5.6.2 and NS3 3.34). The simulation was run on a windows OS. The simulation setup was as follows:
+* Network topology: wired peer-to-peer network with a client and a server.
 
-The following is a topology used:
+* Transmission medium: cable configured with a delay of 0.4ms and a data rate of 100Mbps.
 
+* Protocols: CSMA/CD CSMA/CD in half-duplex and PPP full-duplex mode.
+
+
+* Application: single TCP application running on the client and server.
+
+* Simulation time: 100 seconds.
+
+* Packet generation: The client establishes a TCP connection with the server, then sends a preset number of packets (1000 packets with a packet size of 512 bytes) to the server. The data rate on the client side is increasing from 0.5Mbps to 512Mbps.
+
+* Echo response: The server responds with an echo packet of the same size of the received packet, with no delay. The echo factor can be modified.
+
+* Queue: DropTail queue is used with default configuration
+
+* Time at which each application starts/stops: The time of the start is 0 and stop will be when all packets that are intended to be sent are sent.
+
+The following is a topology we used : 
 ![topology](topology.jpeg?raw=true "Title")
 
-This is the socket diagram that shows what each machine does, the server starts waiting for new connection, then the client machine establishes a Tcp connection with the server, then it starts sending packets and for each packet the server can echo after a configurable delay:
-
-![socket diagram](socket.jpeg?raw=true "Title")
 
 This table shows the default setup configuration:
 
-![setup](setup.png)
+![setup](setup.png?raw=true "Title")
 
 
 ## Documentation
