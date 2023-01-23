@@ -47,6 +47,26 @@ This table shows the default setup configuration:
 
 ![setup](setup.png)
 
+
+## Documentation
+
+The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it in the form of an archeive under the folders [OMNET++](./OMNET++) and [NS3](./Ns3). Unzip the files then open index.html. There is also a accompanying explanation file that can answer your questions.
+
+To make configuration changes, you can work on the omnet.ini file for Omnet++ and run_point_to_point.sh file for Ns3.
+
+Omnet++ : To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf)
+When you run the simulation however, you can use the popup to pick the configuration you want.
+The ".ini" file can be used to change the setup, like adding another machine...
+
+Ns3 : the file run_point_to_point.sh is a bash file that runs the simulation and passes the desired arguments, then
+it extracts the program output and saves it to a file and greps the results.
+You can change the passed parameters, to better understand the function of these parameters run the command :
+./waf -v --run "scratch/tcpClientServer.cc --help"
+
+To change the NS3 setup/topology, you need to change the function **simulate()** in the ".cc" file. This link should be useful [How to setup Ns3 topology?](https://www.nsnam.org/docs/tutorial/html/building-topologies.html)
+
+And for Omnet++ you can changes the **.ned*** files.
+
 ## Conclusion
 ---------------------
 The results of the simulation were analyzed and compared based on the network performance criteria mentioned above.
