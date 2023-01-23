@@ -81,4 +81,11 @@ The specific pattern being searched for in this command is "client intended pack
 
 The command searches for the pattern "client intended packets sent" in the wired.txt file and returns all the lines that contain this output. This command is useful for extracting specific information from the output file and making it easier to analyze the simulation results.
 
+4- Note
+---------------------
+To better understand the meaning of these parameters in the the run_point_to_point.sh file ,run the command : 
+```
+$ ./waf -v --run "scratch/tcpClientServer.cc --help"
+```
 
+There following video  show how to run the code an extarct the results in NS3 : https://www.youtube.com/watch?v=bYftoLBCXA4
