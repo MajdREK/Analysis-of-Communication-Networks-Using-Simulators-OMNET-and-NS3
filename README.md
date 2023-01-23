@@ -50,7 +50,7 @@ This table shows the default setup configuration:
 
 ## Documentation
 ---------------------
-The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it in the form of an archeive under the folders [OMNET++](./OMNET++) and [NS3](./Ns3). Unzip the files then open index.html. There is also a accompanying explanation file that can answer your questions.
+The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it in the form of an archeive under the folders [OMNET++](./omnet++) and [NS3](./Ns3). Unzip the files then open index.html. There is also a accompanying explanation file that can answer your questions.
 
 To make configuration changes, you can work on the omnet.ini file for Omnet++ and run_point_to_point.sh file for Ns3.
 
