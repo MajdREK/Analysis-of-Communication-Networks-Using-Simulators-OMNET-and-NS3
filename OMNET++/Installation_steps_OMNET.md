@@ -46,15 +46,13 @@ Additional Notes
 ---------------------
 * The INET framework will automatically be installed to provide the user with the primary library for the simulation of communication networks.
 
-* INET (Internet Protocol (IP) Network Simulation Framework) is a simulation framework that provides the necessary modules and libraries to simulate communication networks. It is a widely used framework in OMNeT++ and is included by default with the installation of OMNeT++. INET provides a wide range of features and functionalities to simulate communication networks such as:
-
-Support for IPv4, IPv6, and MPLS protocols.
-Support for wired and wireless networks.
-Support for transport protocols such as TCP, UDP, and SCTP.
-Support for routing protocols such as OSPF, BGP, and AODV.
-Support for mobility models, such as random walk, random waypoint, and group mobility.
-Support for network devices such as switches, routers, and hosts.
-Support for network visualization and analysis tools.
+* INET (Internet Protocol (IP) Network Simulation Framework) is a simulation framework that provides the necessary modules and libraries to simulate communication networks. It is a widely used framework in OMNeT++ and is included by default with the installation of OMNeT++. INET provides a wide range of features and functionalities to simulate communication networks such as: Support for IPv4, IPv6, and MPLS protocols.
+                                                            Support for wired and wireless networks.
+                                                            Support for transport protocols such as TCP, UDP, and SCTP.
+                                                            Support for routing protocols such as OSPF, BGP, and AODV.
+                                                            Support for mobility models, such as random walk, random waypoint, and group mobility.
+                                                            Support for network devices such as switches, routers, and hosts.
+                                                            Support for network visualization and analysis tools.
 
 * The INET framework is designed to be highly modular and extensible, making it easy to add new protocols and models to the simulation. It also provides a large number of example simulations that can be used as a starting point for creating new simulations.
 
