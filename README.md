@@ -16,13 +16,6 @@ CSMA/CD and PPP protocols were chosen in this study as they are legacy telecommu
 * NS3 3.34
 * Windows operating system
 
-## Setup
----------------------
-* Install windows subsystem for linux (wsl)
-* Install OMNET++ and NS3; installation guides and required files are available in the respective GitHub repositories.
-* Clone or download the project repository, one for OMNET++ and one for NS3.
-* Follow the guide provided in the repository's README file to set up and create new projects for each simulator.
-* Follow the guide and video tutorials on running the code and extracting the results.
 
 ## Usage
 ---------------------
@@ -64,22 +57,17 @@ This table shows the default setup configuration:
 
 ## Documentation
 ---------------------
-The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it in the form of an archeive under the folders [OMNET++](./omnet++) and [NS3](./Ns3). Unzip the files then open index.html. There is also a accompanying explanation file that can answer your questions.
+The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it in the form of an archeive under the folders [OMNET++](./omnet++) and [NS3](./Ns3). Unzip the files then open index.html.
+For each software, there is also a pdf document that explains the classes, functions and methods used for each software (OMNET++_code_explanation.pdf and NS3_code_explanation.pdf )
 
 To make configuration changes, you can work on the omnet.ini file for Omnet++ and run_point_to_point.sh file for Ns3.
 
 Omnet++ : To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf)
-When you run the simulation however, you can use the popup to pick the configuration you want.
-The ".ini" file can be used to change the setup, like adding another machine...
+When you run the simulation however, you can use the popup to pick the configuration you want. The ".ini" file can be used to change the setup.
 
-Ns3 : the file run_point_to_point.sh is a bash file that runs the simulation and passes the desired arguments, then
-it extracts the program output and saves it to a file and greps the results.
-You can change the passed parameters, to better understand the function of these parameters run the command :
+Ns3 : the file run_point_to_point.sh is a bash file that runs the simulation and passes the desired arguments, then it extracts the program output and saves it to a file and greps the results. You can change the passed parameters, to better understand the function of these parameters run the command :
 ./waf -v --run "scratch/tcpClientServer.cc --help"
 
-To change the NS3 setup/topology, you need to change the function **simulate()** in the ".cc" file. This link should be useful [How to setup Ns3 topology?](https://www.nsnam.org/docs/tutorial/html/building-topologies.html)
-
-And for Omnet++ you can changes the **.ned*** files.
 
 ## Conclusion
 ---------------------
