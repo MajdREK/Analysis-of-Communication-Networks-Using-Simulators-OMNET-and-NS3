@@ -10,13 +10,6 @@ The wiredtcpclientserver.cc file is a C++ program that simulates a network with 
 *  It also includes a template class called SimpleHistogram, which is used to count occurrences of a particular value.
 *  The simulation is defined in the main function and it involves creating the nodes (client and server), setting up the network topology, installing protocols, setting up the application, configuring the simulation, running the simulation, and collecting and printing the results.
 
-* The namespace ns3 contains a number of classes, including Application, Socket, and Packet.
-* The class PacketCreationTimeTag is defined, which is a subclass of the Tag class.
-* The PacketCreationTimeTag class has a static method GetTypeId which returns a unique identifier for this class and sets the parent class and constructor.
-* The PacketCreationTimeTag class also has a public method SetSimpleValue and GetSimpleValue which sets and gets the value of a private member variable m_simpleValue.
-* There are two global variables defined ServerMacTxBackoffOccurCount and ClientMacTxBackoffOccurCount which are both initially set to 0.
-* There are two global functions defined ServerMacTxBackoffOccur and ClientMacTxBackoffOccur. These functions take in a string and a pointer to a Packet object and increment the corresponding global variable count.
-
 * The TcpEchoClient class is an implementation of an Application in NS3. It is used to create a TCP client that can send a specified number of packets of a specified size to a specified server at a specified data rate and starting time.
 * It has several member variables such as a socket pointer, the address of the peer, packet size, number of packets, data rate, send event, running status, send time, packets sent/received, bytes sent/received, packets transmission time, maximum/minimum received packet size, histograms for received/sent packet sizes, send interval, and various statistics related to timing.
 * It also has several methods such as Setup, ShowStats, HandleRead, HandleClose, ConnectionSucceeded, ConnectionFailed, StartApplication, StopApplication, SendPacket, ScheduleTx, and others for setting up and managing the application's behavior.
@@ -83,43 +76,5 @@ The class also maintains several member variables to keep track of statistics su
 * Other parameters for the client and server applications are also set such as packet size, packet count, data rate, and echo delay.
               
 ====> In summary, the provided C++ code is a simulation of a client-server network using the ns-3 library. The simulation creates two nodes, one acting as the client and one acting as the server, and connects them via either a CSMA or Point-to-Point channel. Error rate is also introduced to the simulation through the use of a RateErrorModel. The client and server applications, TcpEchoClient and TcpEchoServer, respectively, are then installed on the corresponding nodes. The TcpEchoClient sends packets to the TcpEchoServer, which then echoes them back with a delay and a specified echo factor. The simulation also includes the ability to capture pcap traces for the devices, and several statistics are collected and printed out at the end of the simulation such as packets sent and received, bytes sent and received, and packet delay.
-
-
-
-
- 
-  
- 
-  
-  
-  
-  
-  
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
