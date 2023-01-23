@@ -48,6 +48,21 @@ The results of the simulation show that both OMNET++ and NS3 are powerful networ
 While both simulators have their strengths and weaknesses, the results of the simulation indicate 
 
 
+Future work 
+---------------------
+
+Note
+---------------------
+This project is based on a Master's thesis at the University of Applied Sciences Berlin and is intended for academic and research purposes only.
+
+Contact 
+---------------------
+You can contact the author by email or through the GitHub repository, if you have any questions or issues with the project.
+
+Additional Resources 
+---------------------
+* Code explanations for each software are provided in the Github repositories.
+* Video tutorials on how to run the code and extract results are available on the project's Github repositories
 
 Much work was done in comparing the differences
 between OMNET++ and NS3 network simulators in terms of general instruction
