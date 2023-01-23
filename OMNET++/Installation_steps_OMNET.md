@@ -5,13 +5,6 @@ OMNeT++ Installation on Windows
 This guide will walk you through the process of installing OMNeT++ on a Windows operating system.
 
 
-Prerequisites
----------------------
-
-* Windows 7 or later
-* 2 GB of RAM
-* 1 GB of free disk space
-
 Installation Steps
 ---------------------
 
@@ -43,7 +36,7 @@ This will navigate to the "aloha" sample simulation directory. Then you can run 
 ```
 $ ./aloha
 ``` 
-This will run the simulation and open a new window that shows the results. If the simulation runs successfully and you can see the results, it means that OMNeT++ is installed correctly and all the sample files are working properly.
+This will open the OMNET++ Qtenv GUI for running simulations in this case the aloha project.  If the simulation runs successfully , it means that OMNeT++ is installed correctly and all the sample files are working properly.
 
 
 8-  you can start the OMNeT++ IDE by running the following command in the "mingwenv" terminal:
