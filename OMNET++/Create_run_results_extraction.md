@@ -74,3 +74,17 @@ The simulation will begin running and you can view the OMNET++ QTenv in the "Sim
 * Makefile : It's used to build the project and is used to specify the compilation options and dependencies for the project.
 
 
+## Help
+
+If you have any question or clarifications related to OMNeT++, please check the documentation provided at the [OMNeT++ site](https://www.omnetpp.org) and
+[INET](https://inet.omnetpp.org) sites. Here are the important documents.
+
+1. OMNeT++ - [Install Guide](https://www.omnetpp.org/doc/omnetpp/InstallGuide.pdf), 
+   [Simulation Manual](https://www.omnetpp.org/doc/omnetpp/SimulationManual.pdf), 
+   [IDE User Guide](https://www.omnetpp.org/doc/omnetpp/UserGuide.pdf)
+
+2. INET - [Documentation](https://inet.omnetpp.org/Introduction.html)
+
+3. Results processing in OMNeT++ IDE - Chapter 10 of the [IDE User Guide](https://www.omnetpp.org/doc/omnetpp/UserGuide.pdf)
+
+
