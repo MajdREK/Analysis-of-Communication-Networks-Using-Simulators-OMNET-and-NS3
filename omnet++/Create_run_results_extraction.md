@@ -65,6 +65,8 @@ The project will now be loaded into the OMNET++ IDE and you should see the proje
 
 To run simulations, an OMNeT++ , open the "omnetpp.ini" file, located in the project's root directory of the project and then press the "Run" button on the toolbar or use the keyboard shortcut (Ctrl + F11) to start the simulation. The "Run" button is represented by a green arrow and can be found on the toolbar, which is located on the top of the screen.
 
+Then the following window should appear. 
+
 The simulation will begin running and you can view the OMNET++ QTenv in the "Simulation Output" window. 
 
 
