@@ -36,8 +36,7 @@ This will navigate to the "aloha" sample simulation directory. Then you can run 
 ```
 $ ./aloha
 ``` 
-This will open the OMNET++ Qtenv GUI for running simulations in this case the aloha project.  If the simulation runs successfully , it means that OMNeT++ is installed correctly and all the sample files are working properly.
-
+This will open the OMNET++ Qtenv GUI for running simulations , in this case the ALOHA project.  If the simulation runs successfully , it means that OMNeT++ is installed correctly and all the sample files are working properly.
 
 8-  you can start the OMNeT++ IDE by running the following command in the "mingwenv" terminal:
 ```
