@@ -14,7 +14,7 @@ The following is a topology used:
 
 ![topology](topology.jpeg?raw=true "Title")
 
-This is the socket diagram that shows what each machine does:
+This is the socket diagram that shows what each machine does, the server starts waiting for new connection, then the client machine establishes a Tcp connection with the server, then it starts sending packets and for each packet the server can echo after a configurable delay:
 
 ![socket diagram](socket.jpeg?raw=true "Title")
 
@@ -32,5 +32,5 @@ The study found that when simulating the half-duplex CSMA/CD protocol, NS3 gave 
 
 ## Conclusion
 
-The study found that OMNET++ and NS3 both have their strengths and weaknesses when it comes to simulating communication networks. OMNET++ is a more general-purpose simulator that can simulate other fields besides networks, such as (such as transportation system, power systems and some biological system) while NS3 is more specialized in network simulations. However, when it comes to simulating legacy telecommunication technologies such as CSMA/CD and PPP protocols, the study found that NS3 gave more realistic results than OMNET++. Additionally, the study found that OMNET++ has modules ( The Tcp section of Inet framework ) that are unfinished and contain comments such as 'Todo'. OMNET++ could simulate the TxBuffer size if an extension such as TcpNsc was used.
+The study found that OMNET++ and NS3 both have their strengths and weaknesses when it comes to simulating communication networks. OMNET++ is a more general-purpose simulator that can simulate other fields besides networks, (such as transportation system, power systems and some biological system) while NS3 is more specialized in network simulations. However, when it comes to simulating legacy telecommunication technologies such as CSMA/CD and PPP protocols, the study found that NS3 gave more realistic results than OMNET++. Additionally, the study found that OMNET++ has modules ( The Tcp section of Inet framework ) that are unfinished and contain comments such as 'Todo'. OMNET++ could simulate the TxBuffer size if an extension named TcpNsc was used.
 
