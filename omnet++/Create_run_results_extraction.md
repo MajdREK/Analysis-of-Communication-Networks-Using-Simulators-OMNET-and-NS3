@@ -96,6 +96,13 @@ a table of the results
 * Configuration files (INI files): These files contain the configuration parameters for the simulation. They are typically in the form of key-value pairs. The main configuration file is the "omnetpp.ini" file, which contains the parameters that define the simulation's behavior, such as the number of runs, the duration of the simulation, and the seed for the random number generator.
 * Makefile : It's used to build the project and is used to specify the compilation options and dependencies for the project.
 
+## WiredTcpClientServer project
+
+* Download the wiredTcpClientServer project folder.
+* Copy the folder to the "samples" directory of your OMNeT++ installation. This is typically located at "OMNeT++_installation_directory/samples".
+* Open OMNeT++.
+* Now you can run the project 
+* The following video show how to run the code an extarct the results in OMNT++ :https://www.youtube.com/watch?v=aMrikVXSh4Q&t=207s 
 
 ## Help
 
