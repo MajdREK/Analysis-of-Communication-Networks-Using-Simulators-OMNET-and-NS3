@@ -55,3 +55,61 @@ This table shows the default setup configuration:
 
 ![setup](setup.png?raw=true "Title")
 
+**How to run the projects?**
+
+For the installlation of the software, check the folder ![installation](installation)
+
+In the folders [ns3](ns3) and [omnet++](omnet++) you find the source code of the projects for both simulators.
+
+For Ns3 you place the source code with the bash file under the **scratch** folder and then you run the bash file.
+
+For Omnet++ you place the **WiredTcpClientServer** folder under the **samples** folder of Omnet++.
+
+There following are two videos that show how to run the code. 
+
+Omnet++ : [https://www.youtube.com/watch?v=aMrikVXSh4Q](https://www.youtube.com/watch?v=bYftoLBCXA4)
+
+Ns3 : [https://www.youtube.com/watch?v=bYftoLBCXA4](https://www.youtube.com/watch?v=bYftoLBCXA4)
+
+**How to change the code and reconfigure the setup?**
+
+The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it under the folder [documentation](documentation). Unzip the files then open index.html from each resultant folder. Also you can check the folder ![code_explained](code_explained) that further explains the code.
+
+To make configuration changes, you can work on the omnet.ini file for Omnet++ and run_point_to_point.sh file for Ns3.
+
+Omnet++ : To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf)
+When you run the simulation however, you can use the popup to pick the configuration you want. 
+The ".ini" file can be used to change the setup, like adding another machine...
+
+Ns3 : the file run_point_to_point.sh is a bash file that runs the simulation and passes the desired arguments, then
+it extracts the program output and saves it to a file and greps the results.
+You can change the passed parameters, to better understand the function of these parameters run the command : 
+./waf -v --run "scratch/tcpClientServer.cc --help"
+
+
+To change the NS3 setup/topology, you need to change the function **simulate()** in the ".cc" file. This link should be useful [How to setup Ns3 topology?](https://www.nsnam.org/docs/tutorial/html/building-topologies.html)
+
+**What are the results and how to interpret them?**
+
+Under the [results](results) folder you find the results table for both simulators.
+
+This ![jupyter notebook](render_results_graphs.ipynb) file renders the results in the form of graphs.
+
+For the interpretation of the graphs, read the document ![results interpretation](results_interpretation.pdf)
+
+**Where to go from here?**
+
+The code available in this repostry is configurable. changing the **Echo factor** and/or **Echo Delay** can and will change the behaviour of the network which can be further studied.
+
+**Conclusion**
+
+We have concluded that Ns3 gives more accurated and realistic results, and that Omnet++ is more genral purpose than Ns3.
+We also found that Omnet++ has modules, in this exact subject, that require more development and are obsolete. the exact
+function that we needed was the control of TxBuffer size which was available only in NS3 with the default setup.
+( Omnet++ provides this functionality with an extension called ![TcpNsc](https://inet.omnetpp.org/docs/users-guide/ch-transport.html) )
+
+**Final notes**
+
+This repository studied the diffrence between NS3 and Omnet++ in terms of the performace and behaviour for client server wired connection.
+Feel free to post issues and patches.
+
