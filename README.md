@@ -47,6 +47,9 @@ Conclusion
 The results of the simulation show that both OMNET++ and NS3 are powerful network simulators that can be used to analyze different scenarios and network performance. 
 While both simulators have their strengths and weaknesses, the results of the simulation indicate 
 
+The results of the simulations were analyzed and compared to draw conclusions about the relative performance of the two simulators.
+The findings of this project indicate that both OMNET++ and NS3 are powerful network simulators that can be used to analyze different scenarios and network performance. 
+
 
 Future work 
 ---------------------
