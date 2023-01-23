@@ -59,11 +59,11 @@ Makefile
 ---------------------
 A makefile is a simple text file used to specify the compilation options and dependencies for the project. It is used to automate the process of building the project and ensures that the code is built in the correct order.
 
-Running the Project
+Running Simulations
 ======================
 The project will now be loaded into the OMNET++ IDE and you should see the project files in the "Project Explorer" window.
 
-Open the "omnetpp.ini" file, located in the project's root directory of the project and then press the "Run" button on the toolbar or use the keyboard shortcut (Ctrl + F11) to start the simulation. The "Run" button is represented by a green arrow and can be found on the toolbar, which is located on the top of the screen.
+To run simulations, an OMNeT++ , open the "omnetpp.ini" file, located in the project's root directory of the project and then press the "Run" button on the toolbar or use the keyboard shortcut (Ctrl + F11) to start the simulation. The "Run" button is represented by a green arrow and can be found on the toolbar, which is located on the top of the screen.
 
 The simulation will begin running and you can view the OMNET++ QTenv in the "Simulation Output" window. 
 
