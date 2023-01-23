@@ -76,11 +76,18 @@ In this case, w have to choose the configuration before we can use the run butto
 
 Results extraction  Using the OMNeT++ IDE
 ======================
-Based on the standard configuration, the raw results (vector and scalar) collected after a simulation run are located in the simulation/results folder.
+Based on the standard configuration, the results (vector and scalar) collected after a simulation run are located in the simulation/results folder.
 
-OMNET++ generate results file (*.vec or *.sca) under the simulation/results folder. Now open the folder Result ->duble click on the file with .sca extation 
+OMNET++ generate a results file (*.vec or *.sca) under the simulation/results folder. Now open the folder Result ->duble and click on the file with the .sca extension 
 
-The simulation will begin running and you can view the OMNET++ QTenv in the "Simulation Output" window. 
+![Results.png](Results.png?raw=true "Title") 
+
+You can choose the file name you want. And then finish a file which is an Analysis File (and) is created where all results are stored. Now click on browse data to get 
+a table of the results
+
+![broseData.png](broseData.png?raw=true "Title") 
+![Results.omnet++.png.png](Results.omnet++.png.png?raw=true "Title") 
+
 
 
 * Network Description files (NED files): These files describe the topology of the network and the properties of the modules. They are written in the NED language and define the structure of the simulation. They specify the modules, channels, and connections used in the simulation.
