@@ -64,6 +64,8 @@ Running Simulations
 The project will now be loaded into the OMNET++ IDE and you should see the project files in the "Project Explorer" window.
 
 To run simulations, an OMNeT++ , open the "omnetpp.ini" file, located in the project's root directory of the project and then press the "Run" button on the toolbar or use the keyboard shortcut (Ctrl + F11) to start the simulation. The "Run" button is represented by a green arrow and can be found on the toolbar, which is located on the top of the screen.
+The following is a topology we used : 
+![topology](run_project.PNG?raw=true "Title")
 
 Then the following window should appear. 
 
