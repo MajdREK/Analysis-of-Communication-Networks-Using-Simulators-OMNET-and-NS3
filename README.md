@@ -57,16 +57,24 @@ This table shows the default setup configuration:
 
 ## Documentation
 ---------------------
-The code is commented and there is a web-based documentation you can browse to further understand the C++ code, you can find it in the form of an archeive under the folders [OMNET++](./omnet++) and [NS3](./Ns3). Unzip the files then open index.html.
-For each software, there is also a pdf document that explains the classes, functions and methods used for each software (OMNET++_code_explanation.pdf and NS3_code_explanation.pdf )
+Here is a highlight of the structure of the repository:
+- Two Folders: `ns3`, `omnet++` each containing the following :
+    - the simulation program 
+    - the results is raw excel table 
+    - A readme for how to create the project and run and get the results ( with video too )
+    - A readme that explains the C++ code
+    - A readme for the installation steps of the simulator
+    - A web based documentation site in form or archieve ( extract it and open index.html 
+- A results folder that contains the following:
+  - Results of the simulation 
+  - Python code (colab) used for plotting graphs
+  - Results interpretation
 
-To make configuration changes, you can work on the omnet.ini file for Omnet++ and run_point_to_point.sh file for Ns3.
-
-Omnet++ : To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf)
+The code is commented, To make configuration changes, you can:
+  - Change the omnet.ini file for Omnet++ ( To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf) )
 When you run the simulation however, you can use the popup to pick the configuration you want. The ".ini" file can be used to change the setup.
-
-Ns3 : the file run_point_to_point.sh is a bash file that runs the simulation and passes the desired arguments, then it extracts the program output and saves it to a file and greps the results. You can change the passed parameters, to better understand the function of these parameters run the command :
-./waf -v --run "scratch/tcpClientServer.cc --help"
+  - Change run_point_to_point.sh file for Ns3 ( It is a bash file that runs the simulation and passes the desired arguments, then it extracts the program output and saves it to a file and greps the results. You can change the passed parameters, to better understand the function of these parameters run the command :
+./waf -v --run "scratch/tcpClientServer.cc --help" ).
 
 ## Conclusion
 ---------------------
