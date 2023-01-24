@@ -59,8 +59,8 @@ This table shows the default setup configuration:
 ---------------------
 Here is a highlight of the structure of the repository:
 - Two Folders: `ns3`, `omnet++` each containing the following :
-    - the simulation program 
-    - the results is raw excel table 
+    - The simulation program code ( commented code )
+    - The results is raw excel table 
     - A readme for how to create the project and run and get the results ( with video too )
     - A readme that explains the C++ code
     - A readme for the installation steps of the simulator
@@ -70,7 +70,7 @@ Here is a highlight of the structure of the repository:
   - Python code (colab) used for plotting graphs
   - Results interpretation
 
-The code is commented, To make configuration changes, you can:
+To make configuration changes, you can:
   - Change the omnet.ini file for Omnet++ ( To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf) )
 When you run the simulation however, you can use the popup to pick the configuration you want. The ".ini" file can be used to change the setup.
   - Change run_point_to_point.sh file for Ns3 ( It is a bash file that runs the simulation and passes the desired arguments, then it extracts the program output and saves it to a file and greps the results. You can change the passed parameters, to better understand the function of these parameters run the command :
