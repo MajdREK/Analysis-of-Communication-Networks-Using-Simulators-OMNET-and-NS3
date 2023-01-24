@@ -61,7 +61,7 @@ Here is a highlight of the structure of the repository:
 - Two Folders: `ns3`, `omnet++` each containing the following :
     - The simulation program code ( commented code )
     - The results in raw form (excel table) 
-    - A readme for how to create the project and run and get the results ( with video too )
+    - A readme for how to create and run the project and how to get the results ( link to extrrnal video included )
     - A readme that explains the C++ code
     - A readme for the installation steps of the simulator
     - A web based documentation site in form or archieve ( extract it and open index.html 
