@@ -64,11 +64,11 @@ Here is a highlight of the structure of the repository:
     - A readme for how to create and run the project and how to get the results ( link to extrrnal video included )
     - A readme that explains the C++ code
     - A readme for the installation steps of the simulator
-    - A web based documentation site in form or archieve ( extract it and open index.html 
+    - A web based documentation interface in form of archieve ( extract it and open index.html )
 - A results folder that contains the following:
   - Results of the simulation 
   - Python code (colab) used for plotting graphs
-  - Results interpretation
+  - Readme for results interpretation 
 
 To make configuration changes, you can:
   - Change the omnet.ini file for Omnet++ ( To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf) )
