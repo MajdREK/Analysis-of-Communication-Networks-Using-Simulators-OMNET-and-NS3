@@ -60,7 +60,7 @@ This table shows the default setup configuration:
 Here is a highlight of the structure of the repository:
 - Two Folders: `ns3`, `omnet++` each containing the following :
     - The simulation program code ( commented code )
-    - The results is raw excel table 
+    - The results in raw form (excel table) 
     - A readme for how to create the project and run and get the results ( with video too )
     - A readme that explains the C++ code
     - A readme for the installation steps of the simulator
