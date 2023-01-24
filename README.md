@@ -72,7 +72,7 @@ Here is a highlight of the structure of the repository:
 
 To make configuration changes, you can:
   - Change the omnet.ini file for Omnet++ ( To better understand Omnet++ ".ini" files use this link [https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf](https://doc.omnetpp.org/omnetpp/IDE-Overview.pdf) )
-When you run the simulation however, you can use the popup to pick the configuration you want. The ".ini" file can be used to change the setup.
+When you run the simulation however, you can use the popup to pick the configuration you want.
   - Change run_point_to_point.sh file for Ns3 ( It is a bash file that runs the simulation and passes the desired arguments, then it extracts the program output and saves it to a file and greps the results. You can change the passed parameters, to better understand the function of these parameters run the command :
 ./waf -v --run "scratch/tcpClientServer.cc --help" ).
 
