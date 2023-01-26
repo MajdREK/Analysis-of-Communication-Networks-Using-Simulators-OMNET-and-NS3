@@ -67,7 +67,7 @@ Here is a highlight of the structure of the repository:
     - A web based documentation interface in form of archieve ( extract it and open index.html )
 - A results folder that contains the following:
   - Results of the simulation 
-  - Python code (colab) used for plotting graphs
+  - Python code (jupyter notebook) used for plotting graphs
   - Readme for results interpretation 
 
 To make configuration changes, you can:
