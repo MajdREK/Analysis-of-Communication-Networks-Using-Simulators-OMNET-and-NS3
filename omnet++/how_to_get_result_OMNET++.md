@@ -49,156 +49,18 @@ The result of the application layer will be generated in the console of the OMNE
 
 2- Phsical layer statistic
 ---------------------
+All the physical layer statistic is extracted from the file .anf (for more information see the readme file of the Create_run_results_extraction)
 
 
 
+Here will only need some specific data to search for, the data needed are :
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-$ grep -E "client packets sent" scratch/wired.txt
-```
-and then : 
-```
-$ grep -E "client packets received" scratch/wired.txt
-```
-to get the results of the packet loss ratio on the server-side, type this command:
-```
-$ grep -E "server packets sent" scratch/wired.txt
-```
-and then :
-```
-$ grep -E "server packets received" scratch/wired.txt 
-```
-===> Then you have to calculate  the ratio using this formula: 
-
- $$ Packet \  loss  \ ratio =  \frac{\sum (Packets  \ Sent + Packets  \ Received ) }{ \sum Packets  \ Sent } \times 100$$
-
-2- NS3 number of bytes sent and received client-side (from application layer to physical layer )  graph 
----------------------
- 
-to get the results of  number of bytes sent and received client-side (from application layer to physical layer ) , type this command to get the number of bytes sent from the appliction layer :
-```
-$ grep -E "client bytes sent" scratch/wired.txt
-```
-and then , type this command to get the the number of bytes recived from the physical layer :
-```
-$ grep -E "Received bytes by 10.1.1.2" scratch/wired.txt
-```
-3- NS3 total number of bytes transmitted into the channel graph 
----------------------
-to get the results of bytes transmitted into the channel  of the client side   , type this command:
-```
-$ grep -E "Send bytes by 10.1.1.1" scratch/wired.txt
-```
-to get the results of bytes transmitted into the channel  of the server-side , type this command:
-```
-$ grep -E "Received bytes by 10.1.1.2" scratch/wired.txt
-```
-4- NS3 End-to-End Delay graph 
----------------------
-We need first to get the results of the  average received packet of both the client and server-side 
-
-client side , type this command:
-```
-$ grep -E "client average receive time " scratch/wired.txt
-```
-server side , type this command:
-```
-$ grep -E "server average receive time " scratch/wired.txt
-```
-===> Then you have to calculate  the  End-to-End Delay using this formula: 
-
- $$  End-to-End \   Delay =  \frac{ (client \ average \ receive \ time  \ Sent - server \ average \ receive\ time  \ Sent  ) }{ 2 } $$
- 
- 5-  NS3 end to end jitter  graph 
---------------------- 
-to get the results of   end to end jitter of both the client and server-side 
- 
-client side , type this command:
-```
-$ grep -E "client reception average jitter " scratch/wired.txt
-```
-server side , type this command:
-```
-$ grep -E "server reception average jitter" scratch/wired.txt 
-```
- 
- 
- 6-  NS3 throughput applcation graph 
---------------------- 
- 
- to get the results of  NS3 throughput applcation layer of both the client and server-side 
- 
-client side , type this command:
-```
-$ grep -E "client average throughput " scratch/wired.txt
-```
-server side , type this command:
-```
-$ grep -E "server average throughput" scratch/wired.txt 
-```
- 7-  NS3 throughput physical  graph 
---------------------- 
- 
- to get the results of  NS3 throughput physical  layer of both the client and server-side 
- 
-client side , type this command:
-```
-$ grep -E "Throughput out of 10.1.1.1" scratch/wired.txt
-```
-server side , type this command:
-```
-$ grep -E "Throughput out of 10.1.1.2" scratch/wired.txt
-```
-
- 7-  NS3 collisions  graph 
---------------------- 
- 
- to get the results of  NS3 collisions r of both the client and server-side 
- 
-client side , type this command:
-```
-$ grep -E "Client Number of collisions " scratch/wired.txt
-```
-server side , type this command:
-```
-$ grep -E "Server Number of collisions " scratch/wired.txt
-```
- 8-  NS3  Simulation length  graph 
---------------------- 
- to get the results of Simulation length  , type this command: 
-```
-$ grep -E "client last packet receive time" scratch/wired.txt
-``` 
-9-  NS3  Simulator events count  graph 
---------------------- 
- to get the results of Simulation length  , type this command: 
-```
-$ grep -E "Number of events" scratch/wired.txt
-``` 
- NOTE
-======================
-Let's pretend that all results were extracted in half-duplex mode using CSMA protocol which means that --use_csma  in the  run_point_to_point.sh file eagle one. 
-Now we have to change it to zero to switch to full-duplex mode using the PPP protocol. 
-All the commands used above are also valid for the full-duplex mode 
-
+- Client and server-side
+    - txPk:count ==> to get the transmitted packet
+    - txPk:sum(packetBytes) ==> to get the transmitted bytes
+    - rxPkOk:count ==> to get the received packet 
+    - rxPkOk:sum(packetBytes) ==> to get the received bytes 
+    - bits/sec*  ==> to get the throughput 
+    - collision:count ==> to get the number of collision
+![phy.PNG](phy.PNG?raw=true "Title")
 
