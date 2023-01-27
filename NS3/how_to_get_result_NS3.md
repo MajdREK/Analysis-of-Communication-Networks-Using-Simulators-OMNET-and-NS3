@@ -18,26 +18,19 @@ Note: All possibilities that can be searched are written in the run_point_to_poi
 to get the results of the packet loss ratio on the client-side, type this command:
 ```
 $ grep -E "client packets sent" scratch/wired.txt
-
-
 ```
 and then : 
 ```
-
 $ grep -E "client packets received" scratch/wired.txt
 
 ```
 to get the results of the packet loss ratio on the server-side, type this command:
 ```
 $ grep -E "server packets sent" scratch/wired.txt
-
-
 ```
 and then :
 ```
-
 $ grep -E "server packets received" scratch/wired.txt 
-
 ```
 ===> Then you have to calculate  the ratio using this formula: 
 
@@ -52,7 +45,6 @@ $ grep -E "client bytes sent" scratch/wired.txt
 
 ```
 and then , type this command to get the the number of bytes recived from the physical layer :
-
 ```
 $ grep -E "Received bytes by 10.1.1.2" scratch/wired.txt
 
@@ -65,7 +57,6 @@ $ grep -E "Send bytes by 10.1.1.1" scratch/wired.txt
 
 ```
 to get the results of bytes transmitted into the channel  of the server-side , type this command:
-
 ```
 $ grep -E "Received bytes by 10.1.1.2" scratch/wired.txt
 
@@ -77,12 +68,10 @@ We need first to get the results of the  average received packet of both the cli
 client side , type this command:
 ```
 $ grep -E "client average receive time " scratch/wired.txt
-
 ```
 server side , type this command:
 ```
 $ grep -E "server average receive time " scratch/wired.txt
-
 ```
 ===> Then you have to calculate  the  End-to-End Delay using this formula: 
 
@@ -95,12 +84,10 @@ to get the results of   end to end jitter of both the client and server-side
 client side , type this command:
 ```
 $ grep -E "client reception average jitter " scratch/wired.txt
-
 ```
 server side , type this command:
 ```
 $ grep -E "server reception average jitter" scratch/wired.txt 
-
 ```
  
  
@@ -112,12 +99,10 @@ $ grep -E "server reception average jitter" scratch/wired.txt
 client side , type this command:
 ```
 $ grep -E "client average throughput " scratch/wired.txt
-
 ```
 server side , type this command:
 ```
 $ grep -E "server average throughput" scratch/wired.txt 
-
 ```
  7-  NS3 throughput physical  graph 
 --------------------- 
@@ -127,12 +112,10 @@ $ grep -E "server average throughput" scratch/wired.txt
 client side , type this command:
 ```
 $ grep -E "Throughput out of 10.1.1.1" scratch/wired.txt
-
 ```
 server side , type this command:
 ```
 $ grep -E "Throughput out of 10.1.1.2" scratch/wired.txt
-
 ```
 
  7-  NS3 collisions  graph 
@@ -147,7 +130,6 @@ $ grep -E "Client Number of collisions " scratch/wired.txt
 server side , type this command:
 ```
 $ grep -E "Server Number of collisions " scratch/wired.txt
-
 ```
  
 
@@ -163,5 +145,6 @@ $ grep -E "client last packet receive time" scratch/wired.txt
 ```
 $ grep -E "Number of events" scratch/wired.txt
 ``` 
- 
+ NOTE
+======================
  
