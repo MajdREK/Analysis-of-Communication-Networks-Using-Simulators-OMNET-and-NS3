@@ -22,7 +22,6 @@ $ grep -E "client packets sent" scratch/wired.txt
 and then : 
 ```
 $ grep -E "client packets received" scratch/wired.txt
-
 ```
 to get the results of the packet loss ratio on the server-side, type this command:
 ```
@@ -42,24 +41,20 @@ $ grep -E "server packets received" scratch/wired.txt
 to get the results of  number of bytes sent and received client-side (from application layer to physical layer ) , type this command to get the number of bytes sent from the appliction layer :
 ```
 $ grep -E "client bytes sent" scratch/wired.txt
-
 ```
 and then , type this command to get the the number of bytes recived from the physical layer :
 ```
 $ grep -E "Received bytes by 10.1.1.2" scratch/wired.txt
-
 ```
 3- NS3 total number of bytes transmitted into the channel graph 
 ---------------------
 to get the results of bytes transmitted into the channel  of the client side   , type this command:
 ```
 $ grep -E "Send bytes by 10.1.1.1" scratch/wired.txt
-
 ```
 to get the results of bytes transmitted into the channel  of the server-side , type this command:
 ```
 $ grep -E "Received bytes by 10.1.1.2" scratch/wired.txt
-
 ```
 4- NS3 End-to-End Delay graph 
 ---------------------
