@@ -131,15 +131,13 @@ server side , type this command:
 ```
 $ grep -E "Server Number of collisions " scratch/wired.txt
 ```
- 
-
-  8-  NS3  Simulation length  graph 
+ 8-  NS3  Simulation length  graph 
 --------------------- 
  to get the results of Simulation length  , type this command: 
 ```
 $ grep -E "client last packet receive time" scratch/wired.txt
 ``` 
- 9-  NS3  Simulator events count  graph 
+9-  NS3  Simulator events count  graph 
 --------------------- 
  to get the results of Simulation length  , type this command: 
 ```
@@ -147,4 +145,8 @@ $ grep -E "Number of events" scratch/wired.txt
 ``` 
  NOTE
 ======================
- 
+Let's pretend that all results were extracted in half-duplex mode using CSMA protocol which means that --use_csma  in the  run_point_to_point.sh file eagle one. 
+Now we have to change it to zero to switch to full-duplex mode using the PPP protocol. 
+All the commands used above are also valid for the full-duplex mode 
+
+
