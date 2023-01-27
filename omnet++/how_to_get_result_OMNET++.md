@@ -13,15 +13,42 @@ To get the results of the Application layer, you have first :
     - PPP
 - Then you have to choose the data rate: (0. 5Mbps, 1Mbps, 2Mbps, 4Mbps, 8Mbps, 16Mbps, 32Mbps, 64Mbps, 128Mbps, 256Mbps, 512Mbps) 
 
-![project_explorer.png](project_explorer.png?raw=true "Title")
-![project_explorer.png](project_explorer.png?raw=true "Title")
+![pppcsma.PNG](pppcsma.PNG?raw=true "Title")
+![datarate.PNG](datarate.PNG?raw=true "Title")
+
+The result of the application layer will be generated in the console of the OMNET++ Qtenv IDE 
+- Simulation time 
+- event 
+- Client-side
+    - recived bytes 
+    - sent bytes
+    - recived packets 
+    - sent packets
+    - throughput 
+    - lastSentPacketTime
+    - firstSentPacketTime
+    - lastRcvdPacketTime
+    - delay
+    - avrgDelayCounter
+    - avrgDelayAcc
+    - client reciption average jitter 
+- Server-side
+    - recived bytes 
+    - sent bytes
+    - recived packets 
+    - sent packets
+    - throughput 
+    - lastSentPacketTime
+    - firstSentPacketTime
+    - delay
+    - avrgDelayCounter
+    - server reciption average jitter
 
 
+![applicationstatistic.PNG](applicationstatistic.PNG?raw=true "Title")
 
-
-
-
-
+2- Phsical layer statistic
+---------------------
 
 
 
